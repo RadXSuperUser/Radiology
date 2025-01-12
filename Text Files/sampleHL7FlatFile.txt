@@ -1,0 +1,1020 @@
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20120309132638||ORU^R01|Q162690178T166106789|P|2.3
+PID|1||000734081|000734081|BAR^GRANOLA^||19690226|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||01255^PHYSICIAN^ADAM^I|1247^PHYSICIAN^LAWRENCE^J|02008^PHYSICIAN^SZILVIA~01116^PHYSICIAN^NURUDEEN^A~00976^PHYSICIAN^DAVID^G|MED||||7|||01255^PHYSICIAN^ADAM^I|||||||||||||||||||||||||||20120306145500
+ORC|RE|||||||||||01255
+OBR|1|126372120^STDOM|126372120|MRI_BRAIN^MRI Brain|||20120307000000|20120308091200||||||||01255||||00000SP20120002103||20120309132541||MRI|F||1~^^^^^R
+OBX|1|TX|MRI_BRAIN^MRI Brain Report||Diagnosis: Brain, 4th ventricle||||||F|||20120309132541
+OBX|2|TX|MRI_BRAIN^MRI Brain Report||Findings: Mild gliosis||||||F|||20120309132541
+OBX|3|TX|MRI_BRAIN^MRI Brain Report||Comments:||||||F|||20120309132541
+OBX|4|TX|MRI_BRAIN^MRI Brain Report||  - No evidence of granulomatous inflammation as seen in previous biopsies (SP03-6655).||||||F|||20120309132541
+OBX|5|TX|MRI_BRAIN^MRI Brain Report||  - No evidence of psammoma bodies noted in previous biopsy (SP07-11382).||||||F|||20120309132541
+OBX|6|TX|MRI_BRAIN^MRI Brain Report||Specimen(s): 4th ventricular cyst||||||F|||20120309132541
+OBX|7|TX|MRI_BRAIN^MRI Brain Report||Clinical Information: No clinical information submitted.||||||F|||20120309132541
+OBX|8|TX|MRI_BRAIN^MRI Brain Report||Gross Description:||||||F|||20120309132541
+OBX|9|TX|MRI_BRAIN^MRI Brain Report||  - The specimen, designated as "4th ventricular cyst," was received in formalin.||||||F|||20120309132541
+OBX|10|TX|MRI_BRAIN^MRI Brain Report||  - The specimen consists of an irregular fragment of light tan tissue measuring 0.2 x 0.2 x 0.1 cm.||||||F|||20120309132541
+OBX|11|TX|MRI_BRAIN^MRI Brain Report||  - The specimen was submitted in cassette 1A.||||||F|||20120309132541
+OBX|12|TX|MRI_BRAIN^MRI Brain Report||Microscopic Description: A microscopic examination was performed, confirming mild gliosis.||||||F|||20120309132541
+OBX|13|TX|MRI_BRAIN^MRI Brain Report||Intradepartmental Consultation: Reviewed by T. A. Rose, MD.||||||F|||20120309132541
+OBX|14|TX|MRI_BRAIN^MRI Brain Report||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20120309132541
+OBX|15|TX|MRI_BRAIN^MRI Brain Report||Verified on: 03/09/2012 at 1:25 PM CST.||||||F|||20120309132541
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240819045512||ORU^R01|3671471|P|2.3
+PID|1||819730|819730|Patient^Johnson||19710720|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||34065^PHYSICIAN^John|34065^PHYSICIAN^John|34065^PHYSICIAN^John|MED||||7|||34065^PHYSICIAN^John|||||||||||||||||||||||||||20240819045512
+ORC|RE|||||||||||34065^PHYSICIAN^John
+OBR|1|3671471^STDOM|3671471|XR_Pelvis^X-Ray Pelvis|||20240819045512|20240819045512||||||||34065^PHYSICIAN^John||||3671471||20240819045512||XR|F||1~^^^^^R
+OBX|1|TX|XR_Pelvis^X-Ray Pelvis||Diagnosis: Pelvis||||||F|||20240819045512
+OBX|2|TX|XR_Pelvis^X-Ray Pelvis||Findings: Unremarkable findings.||||||F|||20240819045512
+OBX|3|TX|XR_Pelvis^X-Ray Pelvis||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20240819045512
+OBX|4|TX|XR_Pelvis^X-Ray Pelvis||Verified on: 2025/01/12 04:55:12||||||F|||20240819045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240812045512||ORU^R01|1104972|P|2.3
+PID|1||402469|402469|Patient^Johnson||19871125|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||60577^PHYSICIAN^Anna|60577^PHYSICIAN^Anna|60577^PHYSICIAN^Anna|MED||||7|||60577^PHYSICIAN^Anna|||||||||||||||||||||||||||20240812045512
+ORC|RE|||||||||||60577^PHYSICIAN^Anna
+OBR|1|1104972^STDOM|1104972|NM_Pelvis^Nuclear Medicine Pelvis|||20240812045512|20240812045512||||||||60577^PHYSICIAN^Anna||||1104972||20240812045512||NM|F||1~^^^^^R
+OBX|1|TX|NM_Pelvis^Nuclear Medicine Pelvis||Diagnosis: Pelvis||||||F|||20240812045512
+OBX|2|TX|NM_Pelvis^Nuclear Medicine Pelvis||Findings: Increased uptake in the pelvis, suggestive of tumor.||||||F|||20240812045512
+OBX|3|TX|NM_Pelvis^Nuclear Medicine Pelvis||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20240812045512
+OBX|4|TX|NM_Pelvis^Nuclear Medicine Pelvis||Verified on: 2025/01/12 04:55:12||||||F|||20240812045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20250109045512||ORU^R01|9963573|P|2.3
+PID|1||607937|607937|Patient^Brown||20020608|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||11397^PHYSICIAN^John|11397^PHYSICIAN^John|11397^PHYSICIAN^John|MED||||7|||11397^PHYSICIAN^John|||||||||||||||||||||||||||20250109045512
+ORC|RE|||||||||||11397^PHYSICIAN^John
+OBR|1|9963573^STDOM|9963573|NM_Neck^Nuclear Medicine Neck|||20250109045512|20250109045512||||||||11397^PHYSICIAN^John||||9963573||20250109045512||NM|F||1~^^^^^R
+OBX|1|TX|NM_Neck^Nuclear Medicine Neck||Diagnosis: Neck||||||F|||20250109045512
+OBX|2|TX|NM_Neck^Nuclear Medicine Neck||Findings: Fracture identified in the neck.||||||F|||20250109045512
+OBX|3|TX|NM_Neck^Nuclear Medicine Neck||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20250109045512
+OBX|4|TX|NM_Neck^Nuclear Medicine Neck||Verified on: 2025/01/12 04:55:12||||||F|||20250109045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240414045512||ORU^R01|3809534|P|2.3
+PID|1||257193|257193|Patient^Brown||19590315|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||23838^PHYSICIAN^Anna|23838^PHYSICIAN^Anna|23838^PHYSICIAN^Anna|MED||||7|||23838^PHYSICIAN^Anna|||||||||||||||||||||||||||20240414045512
+ORC|RE|||||||||||23838^PHYSICIAN^Anna
+OBR|1|3809534^STDOM|3809534|XR_Shoulder^X-Ray Shoulder|||20240414045512|20240414045512||||||||23838^PHYSICIAN^Anna||||3809534||20240414045512||XR|F||1~^^^^^R
+OBX|1|TX|XR_Shoulder^X-Ray Shoulder||Diagnosis: Shoulder||||||F|||20240414045512
+OBX|2|TX|XR_Shoulder^X-Ray Shoulder||Findings: No signs of malignancy.||||||F|||20240414045512
+OBX|3|TX|XR_Shoulder^X-Ray Shoulder||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20240414045512
+OBX|4|TX|XR_Shoulder^X-Ray Shoulder||Verified on: 2025/01/12 04:55:12||||||F|||20240414045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240115045512||ORU^R01|2149995|P|2.3
+PID|1||199821|199821|Patient^Smith||19720712|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||96161^PHYSICIAN^Sarah|96161^PHYSICIAN^Sarah|96161^PHYSICIAN^Sarah|MED||||7|||96161^PHYSICIAN^Sarah|||||||||||||||||||||||||||20240115045512
+ORC|RE|||||||||||96161^PHYSICIAN^Sarah
+OBR|1|2149995^STDOM|2149995|NM_Head^Nuclear Medicine Head|||20240115045512|20240115045512||||||||96161^PHYSICIAN^Sarah||||2149995||20240115045512||NM|F||1~^^^^^R
+OBX|1|TX|NM_Head^Nuclear Medicine Head||Diagnosis: Head||||||F|||20240115045512
+OBX|2|TX|NM_Head^Nuclear Medicine Head||Findings: Increased uptake in the head, suggestive of infection.||||||F|||20240115045512
+OBX|3|TX|NM_Head^Nuclear Medicine Head||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20240115045512
+OBX|4|TX|NM_Head^Nuclear Medicine Head||Verified on: 2025/01/12 04:55:12||||||F|||20240115045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240305045512||ORU^R01|6679886|P|2.3
+PID|1||457029|457029|Patient^Johnson||19861118|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||97272^PHYSICIAN^John|97272^PHYSICIAN^John|97272^PHYSICIAN^John|MED||||7|||97272^PHYSICIAN^John|||||||||||||||||||||||||||20240305045512
+ORC|RE|||||||||||97272^PHYSICIAN^John
+OBR|1|6679886^STDOM|6679886|NM_Chest^Nuclear Medicine Chest|||20240305045512|20240305045512||||||||97272^PHYSICIAN^John||||6679886||20240305045512||NM|F||1~^^^^^R
+OBX|1|TX|NM_Chest^Nuclear Medicine Chest||Diagnosis: Chest||||||F|||20240305045512
+OBX|2|TX|NM_Chest^Nuclear Medicine Chest||Findings: Unremarkable findings.||||||F|||20240305045512
+OBX|3|TX|NM_Chest^Nuclear Medicine Chest||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20240305045512
+OBX|4|TX|NM_Chest^Nuclear Medicine Chest||Verified on: 2025/01/12 04:55:12||||||F|||20240305045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240417045512||ORU^R01|1641517|P|2.3
+PID|1||838990|838990|Patient^Johnson||19740924|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||72187^PHYSICIAN^Raj|72187^PHYSICIAN^Raj|72187^PHYSICIAN^Raj|MED||||7|||72187^PHYSICIAN^Raj|||||||||||||||||||||||||||20240417045512
+ORC|RE|||||||||||72187^PHYSICIAN^Raj
+OBR|1|1641517^STDOM|1641517|XR_Pelvis^X-Ray Pelvis|||20240417045512|20240417045512||||||||72187^PHYSICIAN^Raj||||1641517||20240417045512||XR|F||1~^^^^^R
+OBX|1|TX|XR_Pelvis^X-Ray Pelvis||Diagnosis: Pelvis||||||F|||20240417045512
+OBX|2|TX|XR_Pelvis^X-Ray Pelvis||Findings: Unremarkable findings.||||||F|||20240417045512
+OBX|3|TX|XR_Pelvis^X-Ray Pelvis||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20240417045512
+OBX|4|TX|XR_Pelvis^X-Ray Pelvis||Verified on: 2025/01/12 04:55:12||||||F|||20240417045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240610045512||ORU^R01|2910368|P|2.3
+PID|1||145626|145626|Patient^Wilson||19660423|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||13912^PHYSICIAN^David|13912^PHYSICIAN^David|13912^PHYSICIAN^David|MED||||7|||13912^PHYSICIAN^David|||||||||||||||||||||||||||20240610045512
+ORC|RE|||||||||||13912^PHYSICIAN^David
+OBR|1|2910368^STDOM|2910368|MG_Ankle^Mammography Ankle|||20240610045512|20240610045512||||||||13912^PHYSICIAN^David||||2910368||20240610045512||MG|F||1~^^^^^R
+OBX|1|TX|MG_Ankle^Mammography Ankle||Diagnosis: Ankle||||||F|||20240610045512
+OBX|2|TX|MG_Ankle^Mammography Ankle||Findings: No acute abnormalities detected.||||||F|||20240610045512
+OBX|3|TX|MG_Ankle^Mammography Ankle||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20240610045512
+OBX|4|TX|MG_Ankle^Mammography Ankle||Verified on: 2025/01/12 04:55:12||||||F|||20240610045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20241209045512||ORU^R01|2287259|P|2.3
+PID|1||677237|677237|Patient^Taylor||19880523|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||76054^PHYSICIAN^David|76054^PHYSICIAN^David|76054^PHYSICIAN^David|MED||||7|||76054^PHYSICIAN^David|||||||||||||||||||||||||||20241209045512
+ORC|RE|||||||||||76054^PHYSICIAN^David
+OBR|1|2287259^STDOM|2287259|NM_Head^Nuclear Medicine Head|||20241209045512|20241209045512||||||||76054^PHYSICIAN^David||||2287259||20241209045512||NM|F||1~^^^^^R
+OBX|1|TX|NM_Head^Nuclear Medicine Head||Diagnosis: Head||||||F|||20241209045512
+OBX|2|TX|NM_Head^Nuclear Medicine Head||Findings: Increased uptake in the head, suggestive of tumor.||||||F|||20241209045512
+OBX|3|TX|NM_Head^Nuclear Medicine Head||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20241209045512
+OBX|4|TX|NM_Head^Nuclear Medicine Head||Verified on: 2025/01/12 04:55:12||||||F|||20241209045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20241011045512||ORU^R01|48807810|P|2.3
+PID|1||586398|586398|Patient^Brown||19780411|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||73247^PHYSICIAN^Raj|73247^PHYSICIAN^Raj|73247^PHYSICIAN^Raj|MED||||7|||73247^PHYSICIAN^Raj|||||||||||||||||||||||||||20241011045512
+ORC|RE|||||||||||73247^PHYSICIAN^Raj
+OBR|1|48807810^STDOM|48807810|US_Brain^Ultrasound Brain|||20241011045512|20241011045512||||||||73247^PHYSICIAN^Raj||||48807810||20241011045512||US|F||1~^^^^^R
+OBX|1|TX|US_Brain^Ultrasound Brain||Diagnosis: Brain||||||F|||20241011045512
+OBX|2|TX|US_Brain^Ultrasound Brain||Findings: Unremarkable findings.||||||F|||20241011045512
+OBX|3|TX|US_Brain^Ultrasound Brain||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20241011045512
+OBX|4|TX|US_Brain^Ultrasound Brain||Verified on: 2025/01/12 04:55:12||||||F|||20241011045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240214045512||ORU^R01|36778811|P|2.3
+PID|1||100936|100936|Patient^Brown||19800311|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||34848^PHYSICIAN^Anna|34848^PHYSICIAN^Anna|34848^PHYSICIAN^Anna|MED||||7|||34848^PHYSICIAN^Anna|||||||||||||||||||||||||||20240214045512
+ORC|RE|||||||||||34848^PHYSICIAN^Anna
+OBR|1|36778811^STDOM|36778811|XR_Abdomen^X-Ray Abdomen|||20240214045512|20240214045512||||||||34848^PHYSICIAN^Anna||||36778811||20240214045512||XR|F||1~^^^^^R
+OBX|1|TX|XR_Abdomen^X-Ray Abdomen||Diagnosis: Abdomen||||||F|||20240214045512
+OBX|2|TX|XR_Abdomen^X-Ray Abdomen||Findings: Unremarkable findings.||||||F|||20240214045512
+OBX|3|TX|XR_Abdomen^X-Ray Abdomen||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20240214045512
+OBX|4|TX|XR_Abdomen^X-Ray Abdomen||Verified on: 2025/01/12 04:55:12||||||F|||20240214045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240704045512||ORU^R01|84766712|P|2.3
+PID|1||123189|123189|Patient^Johnson||19961113|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||62412^PHYSICIAN^John|62412^PHYSICIAN^John|62412^PHYSICIAN^John|MED||||7|||62412^PHYSICIAN^John|||||||||||||||||||||||||||20240704045512
+ORC|RE|||||||||||62412^PHYSICIAN^John
+OBR|1|84766712^STDOM|84766712|US_Abdomen^Ultrasound Abdomen|||20240704045512|20240704045512||||||||62412^PHYSICIAN^John||||84766712||20240704045512||US|F||1~^^^^^R
+OBX|1|TX|US_Abdomen^Ultrasound Abdomen||Diagnosis: Abdomen||||||F|||20240704045512
+OBX|2|TX|US_Abdomen^Ultrasound Abdomen||Findings: Increased uptake in the abdomen, suggestive of cyst.||||||F|||20240704045512
+OBX|3|TX|US_Abdomen^Ultrasound Abdomen||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20240704045512
+OBX|4|TX|US_Abdomen^Ultrasound Abdomen||Verified on: 2025/01/12 04:55:12||||||F|||20240704045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240625045512||ORU^R01|84577613|P|2.3
+PID|1||653769|653769|Patient^Smith||19560919|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||63122^PHYSICIAN^Sarah|63122^PHYSICIAN^Sarah|63122^PHYSICIAN^Sarah|MED||||7|||63122^PHYSICIAN^Sarah|||||||||||||||||||||||||||20240625045512
+ORC|RE|||||||||||63122^PHYSICIAN^Sarah
+OBR|1|84577613^STDOM|84577613|CT_Abdomen^CT Abdomen|||20240625045512|20240625045512||||||||63122^PHYSICIAN^Sarah||||84577613||20240625045512||CT|F||1~^^^^^R
+OBX|1|TX|CT_Abdomen^CT Abdomen||Diagnosis: Abdomen||||||F|||20240625045512
+OBX|2|TX|CT_Abdomen^CT Abdomen||Findings: Minimal effusion noted.||||||F|||20240625045512
+OBX|3|TX|CT_Abdomen^CT Abdomen||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20240625045512
+OBX|4|TX|CT_Abdomen^CT Abdomen||Verified on: 2025/01/12 04:55:12||||||F|||20240625045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20241112045512||ORU^R01|92085514|P|2.3
+PID|1||637263|637263|Patient^Taylor||19891017|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||81341^PHYSICIAN^Raj|81341^PHYSICIAN^Raj|81341^PHYSICIAN^Raj|MED||||7|||81341^PHYSICIAN^Raj|||||||||||||||||||||||||||20241112045512
+ORC|RE|||||||||||81341^PHYSICIAN^Raj
+OBR|1|92085514^STDOM|92085514|CT_Knee^CT Knee|||20241112045512|20241112045512||||||||81341^PHYSICIAN^Raj||||92085514||20241112045512||CT|F||1~^^^^^R
+OBX|1|TX|CT_Knee^CT Knee||Diagnosis: Knee||||||F|||20241112045512
+OBX|2|TX|CT_Knee^CT Knee||Findings: No signs of malignancy.||||||F|||20241112045512
+OBX|3|TX|CT_Knee^CT Knee||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20241112045512
+OBX|4|TX|CT_Knee^CT Knee||Verified on: 2025/01/12 04:55:12||||||F|||20241112045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240505045512||ORU^R01|42282715|P|2.3
+PID|1||484599|484599|Patient^Johnson||19761223|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||78042^PHYSICIAN^David|78042^PHYSICIAN^David|78042^PHYSICIAN^David|MED||||7|||78042^PHYSICIAN^David|||||||||||||||||||||||||||20240505045512
+ORC|RE|||||||||||78042^PHYSICIAN^David
+OBR|1|42282715^STDOM|42282715|CT_Knee^CT Knee|||20240505045512|20240505045512||||||||78042^PHYSICIAN^David||||42282715||20240505045512||CT|F||1~^^^^^R
+OBX|1|TX|CT_Knee^CT Knee||Diagnosis: Knee||||||F|||20240505045512
+OBX|2|TX|CT_Knee^CT Knee||Findings: Increased uptake in the knee, suggestive of infection.||||||F|||20240505045512
+OBX|3|TX|CT_Knee^CT Knee||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20240505045512
+OBX|4|TX|CT_Knee^CT Knee||Verified on: 2025/01/12 04:55:12||||||F|||20240505045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20241206045512||ORU^R01|88494116|P|2.3
+PID|1||295211|295211|Patient^Smith||19980613|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||42167^PHYSICIAN^David|42167^PHYSICIAN^David|42167^PHYSICIAN^David|MED||||7|||42167^PHYSICIAN^David|||||||||||||||||||||||||||20241206045512
+ORC|RE|||||||||||42167^PHYSICIAN^David
+OBR|1|88494116^STDOM|88494116|XR_Brain^X-Ray Brain|||20241206045512|20241206045512||||||||42167^PHYSICIAN^David||||88494116||20241206045512||XR|F||1~^^^^^R
+OBX|1|TX|XR_Brain^X-Ray Brain||Diagnosis: Brain||||||F|||20241206045512
+OBX|2|TX|XR_Brain^X-Ray Brain||Findings: Fracture identified in the brain.||||||F|||20241206045512
+OBX|3|TX|XR_Brain^X-Ray Brain||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20241206045512
+OBX|4|TX|XR_Brain^X-Ray Brain||Verified on: 2025/01/12 04:55:12||||||F|||20241206045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20241229045512||ORU^R01|72348917|P|2.3
+PID|1||280542|280542|Patient^Taylor||19500726|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||53318^PHYSICIAN^Raj|53318^PHYSICIAN^Raj|53318^PHYSICIAN^Raj|MED||||7|||53318^PHYSICIAN^Raj|||||||||||||||||||||||||||20241229045512
+ORC|RE|||||||||||53318^PHYSICIAN^Raj
+OBR|1|72348917^STDOM|72348917|CT_Pelvis^CT Pelvis|||20241229045512|20241229045512||||||||53318^PHYSICIAN^Raj||||72348917||20241229045512||CT|F||1~^^^^^R
+OBX|1|TX|CT_Pelvis^CT Pelvis||Diagnosis: Pelvis||||||F|||20241229045512
+OBX|2|TX|CT_Pelvis^CT Pelvis||Findings: Increased uptake in the pelvis, suggestive of infection.||||||F|||20241229045512
+OBX|3|TX|CT_Pelvis^CT Pelvis||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20241229045512
+OBX|4|TX|CT_Pelvis^CT Pelvis||Verified on: 2025/01/12 04:55:12||||||F|||20241229045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240819045512||ORU^R01|98227818|P|2.3
+PID|1||731273|731273|Patient^Smith||19480301|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||92353^PHYSICIAN^John|92353^PHYSICIAN^John|92353^PHYSICIAN^John|MED||||7|||92353^PHYSICIAN^John|||||||||||||||||||||||||||20240819045512
+ORC|RE|||||||||||92353^PHYSICIAN^John
+OBR|1|98227818^STDOM|98227818|CT_Neck^CT Neck|||20240819045512|20240819045512||||||||92353^PHYSICIAN^John||||98227818||20240819045512||CT|F||1~^^^^^R
+OBX|1|TX|CT_Neck^CT Neck||Diagnosis: Neck||||||F|||20240819045512
+OBX|2|TX|CT_Neck^CT Neck||Findings: Minimal effusion noted.||||||F|||20240819045512
+OBX|3|TX|CT_Neck^CT Neck||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20240819045512
+OBX|4|TX|CT_Neck^CT Neck||Verified on: 2025/01/12 04:55:12||||||F|||20240819045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240325045512||ORU^R01|68053419|P|2.3
+PID|1||920977|920977|Patient^Smith||19610227|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||62227^PHYSICIAN^John|62227^PHYSICIAN^John|62227^PHYSICIAN^John|MED||||7|||62227^PHYSICIAN^John|||||||||||||||||||||||||||20240325045512
+ORC|RE|||||||||||62227^PHYSICIAN^John
+OBR|1|68053419^STDOM|68053419|MG_Head^Mammography Head|||20240325045512|20240325045512||||||||62227^PHYSICIAN^John||||68053419||20240325045512||MG|F||1~^^^^^R
+OBX|1|TX|MG_Head^Mammography Head||Diagnosis: Head||||||F|||20240325045512
+OBX|2|TX|MG_Head^Mammography Head||Findings: Evidence of mild degenerative changes.||||||F|||20240325045512
+OBX|3|TX|MG_Head^Mammography Head||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20240325045512
+OBX|4|TX|MG_Head^Mammography Head||Verified on: 2025/01/12 04:55:12||||||F|||20240325045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240302045512||ORU^R01|67925220|P|2.3
+PID|1||218965|218965|Patient^Wilson||19760812|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||61549^PHYSICIAN^David|61549^PHYSICIAN^David|61549^PHYSICIAN^David|MED||||7|||61549^PHYSICIAN^David|||||||||||||||||||||||||||20240302045512
+ORC|RE|||||||||||61549^PHYSICIAN^David
+OBR|1|67925220^STDOM|67925220|XR_Abdomen^X-Ray Abdomen|||20240302045512|20240302045512||||||||61549^PHYSICIAN^David||||67925220||20240302045512||XR|F||1~^^^^^R
+OBX|1|TX|XR_Abdomen^X-Ray Abdomen||Diagnosis: Abdomen||||||F|||20240302045512
+OBX|2|TX|XR_Abdomen^X-Ray Abdomen||Findings: Unremarkable findings.||||||F|||20240302045512
+OBX|3|TX|XR_Abdomen^X-Ray Abdomen||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20240302045512
+OBX|4|TX|XR_Abdomen^X-Ray Abdomen||Verified on: 2025/01/12 04:55:12||||||F|||20240302045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240213045512||ORU^R01|42990221|P|2.3
+PID|1||515189|515189|Patient^Smith||19460908|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||32273^PHYSICIAN^David|32273^PHYSICIAN^David|32273^PHYSICIAN^David|MED||||7|||32273^PHYSICIAN^David|||||||||||||||||||||||||||20240213045512
+ORC|RE|||||||||||32273^PHYSICIAN^David
+OBR|1|42990221^STDOM|42990221|XR_Spine^X-Ray Spine|||20240213045512|20240213045512||||||||32273^PHYSICIAN^David||||42990221||20240213045512||XR|F||1~^^^^^R
+OBX|1|TX|XR_Spine^X-Ray Spine||Diagnosis: Spine||||||F|||20240213045512
+OBX|2|TX|XR_Spine^X-Ray Spine||Findings: No acute abnormalities detected.||||||F|||20240213045512
+OBX|3|TX|XR_Spine^X-Ray Spine||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20240213045512
+OBX|4|TX|XR_Spine^X-Ray Spine||Verified on: 2025/01/12 04:55:12||||||F|||20240213045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240327045512||ORU^R01|39307722|P|2.3
+PID|1||741874|741874|Patient^Smith||19730201|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||33856^PHYSICIAN^Anna|33856^PHYSICIAN^Anna|33856^PHYSICIAN^Anna|MED||||7|||33856^PHYSICIAN^Anna|||||||||||||||||||||||||||20240327045512
+ORC|RE|||||||||||33856^PHYSICIAN^Anna
+OBR|1|39307722^STDOM|39307722|XR_Brain^X-Ray Brain|||20240327045512|20240327045512||||||||33856^PHYSICIAN^Anna||||39307722||20240327045512||XR|F||1~^^^^^R
+OBX|1|TX|XR_Brain^X-Ray Brain||Diagnosis: Brain||||||F|||20240327045512
+OBX|2|TX|XR_Brain^X-Ray Brain||Findings: Evidence of mild degenerative changes.||||||F|||20240327045512
+OBX|3|TX|XR_Brain^X-Ray Brain||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20240327045512
+OBX|4|TX|XR_Brain^X-Ray Brain||Verified on: 2025/01/12 04:55:12||||||F|||20240327045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20250106045512||ORU^R01|30355823|P|2.3
+PID|1||602424|602424|Patient^Smith||19860918|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||62433^PHYSICIAN^Anna|62433^PHYSICIAN^Anna|62433^PHYSICIAN^Anna|MED||||7|||62433^PHYSICIAN^Anna|||||||||||||||||||||||||||20250106045512
+ORC|RE|||||||||||62433^PHYSICIAN^Anna
+OBR|1|30355823^STDOM|30355823|NM_Neck^Nuclear Medicine Neck|||20250106045512|20250106045512||||||||62433^PHYSICIAN^Anna||||30355823||20250106045512||NM|F||1~^^^^^R
+OBX|1|TX|NM_Neck^Nuclear Medicine Neck||Diagnosis: Neck||||||F|||20250106045512
+OBX|2|TX|NM_Neck^Nuclear Medicine Neck||Findings: No acute abnormalities detected.||||||F|||20250106045512
+OBX|3|TX|NM_Neck^Nuclear Medicine Neck||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20250106045512
+OBX|4|TX|NM_Neck^Nuclear Medicine Neck||Verified on: 2025/01/12 04:55:12||||||F|||20250106045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20241027045512||ORU^R01|83506024|P|2.3
+PID|1||964874|964874|Patient^Brown||19511222|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||12669^PHYSICIAN^Sarah|12669^PHYSICIAN^Sarah|12669^PHYSICIAN^Sarah|MED||||7|||12669^PHYSICIAN^Sarah|||||||||||||||||||||||||||20241027045512
+ORC|RE|||||||||||12669^PHYSICIAN^Sarah
+OBR|1|83506024^STDOM|83506024|CT_Chest^CT Chest|||20241027045512|20241027045512||||||||12669^PHYSICIAN^Sarah||||83506024||20241027045512||CT|F||1~^^^^^R
+OBX|1|TX|CT_Chest^CT Chest||Diagnosis: Chest||||||F|||20241027045512
+OBX|2|TX|CT_Chest^CT Chest||Findings: Evidence of mild degenerative changes.||||||F|||20241027045512
+OBX|3|TX|CT_Chest^CT Chest||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20241027045512
+OBX|4|TX|CT_Chest^CT Chest||Verified on: 2025/01/12 04:55:12||||||F|||20241027045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240629045512||ORU^R01|30963725|P|2.3
+PID|1||310486|310486|Patient^Brown||19931013|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||78979^PHYSICIAN^Raj|78979^PHYSICIAN^Raj|78979^PHYSICIAN^Raj|MED||||7|||78979^PHYSICIAN^Raj|||||||||||||||||||||||||||20240629045512
+ORC|RE|||||||||||78979^PHYSICIAN^Raj
+OBR|1|30963725^STDOM|30963725|CT_Chest^CT Chest|||20240629045512|20240629045512||||||||78979^PHYSICIAN^Raj||||30963725||20240629045512||CT|F||1~^^^^^R
+OBX|1|TX|CT_Chest^CT Chest||Diagnosis: Chest||||||F|||20240629045512
+OBX|2|TX|CT_Chest^CT Chest||Findings: Increased uptake in the chest, suggestive of inflammation.||||||F|||20240629045512
+OBX|3|TX|CT_Chest^CT Chest||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20240629045512
+OBX|4|TX|CT_Chest^CT Chest||Verified on: 2025/01/12 04:55:12||||||F|||20240629045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240226045512||ORU^R01|18127026|P|2.3
+PID|1||714404|714404|Patient^Taylor||19971212|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||80309^PHYSICIAN^Raj|80309^PHYSICIAN^Raj|80309^PHYSICIAN^Raj|MED||||7|||80309^PHYSICIAN^Raj|||||||||||||||||||||||||||20240226045512
+ORC|RE|||||||||||80309^PHYSICIAN^Raj
+OBR|1|18127026^STDOM|18127026|CT_Shoulder^CT Shoulder|||20240226045512|20240226045512||||||||80309^PHYSICIAN^Raj||||18127026||20240226045512||CT|F||1~^^^^^R
+OBX|1|TX|CT_Shoulder^CT Shoulder||Diagnosis: Shoulder||||||F|||20240226045512
+OBX|2|TX|CT_Shoulder^CT Shoulder||Findings: Minimal effusion noted.||||||F|||20240226045512
+OBX|3|TX|CT_Shoulder^CT Shoulder||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20240226045512
+OBX|4|TX|CT_Shoulder^CT Shoulder||Verified on: 2025/01/12 04:55:12||||||F|||20240226045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240603045512||ORU^R01|89584627|P|2.3
+PID|1||155782|155782|Patient^Johnson||20040507|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||65269^PHYSICIAN^David|65269^PHYSICIAN^David|65269^PHYSICIAN^David|MED||||7|||65269^PHYSICIAN^David|||||||||||||||||||||||||||20240603045512
+ORC|RE|||||||||||65269^PHYSICIAN^David
+OBR|1|89584627^STDOM|89584627|XR_Pelvis^X-Ray Pelvis|||20240603045512|20240603045512||||||||65269^PHYSICIAN^David||||89584627||20240603045512||XR|F||1~^^^^^R
+OBX|1|TX|XR_Pelvis^X-Ray Pelvis||Diagnosis: Pelvis||||||F|||20240603045512
+OBX|2|TX|XR_Pelvis^X-Ray Pelvis||Findings: Evidence of mild degenerative changes.||||||F|||20240603045512
+OBX|3|TX|XR_Pelvis^X-Ray Pelvis||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20240603045512
+OBX|4|TX|XR_Pelvis^X-Ray Pelvis||Verified on: 2025/01/12 04:55:12||||||F|||20240603045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20241102045512||ORU^R01|79405628|P|2.3
+PID|1||596712|596712|Patient^Wilson||19761118|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||18311^PHYSICIAN^Anna|18311^PHYSICIAN^Anna|18311^PHYSICIAN^Anna|MED||||7|||18311^PHYSICIAN^Anna|||||||||||||||||||||||||||20241102045512
+ORC|RE|||||||||||18311^PHYSICIAN^Anna
+OBR|1|79405628^STDOM|79405628|CT_Head^CT Head|||20241102045512|20241102045512||||||||18311^PHYSICIAN^Anna||||79405628||20241102045512||CT|F||1~^^^^^R
+OBX|1|TX|CT_Head^CT Head||Diagnosis: Head||||||F|||20241102045512
+OBX|2|TX|CT_Head^CT Head||Findings: Evidence of mild degenerative changes.||||||F|||20241102045512
+OBX|3|TX|CT_Head^CT Head||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20241102045512
+OBX|4|TX|CT_Head^CT Head||Verified on: 2025/01/12 04:55:12||||||F|||20241102045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240227045512||ORU^R01|52297429|P|2.3
+PID|1||341537|341537|Patient^Wilson||20020320|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||13833^PHYSICIAN^Sarah|13833^PHYSICIAN^Sarah|13833^PHYSICIAN^Sarah|MED||||7|||13833^PHYSICIAN^Sarah|||||||||||||||||||||||||||20240227045512
+ORC|RE|||||||||||13833^PHYSICIAN^Sarah
+OBR|1|52297429^STDOM|52297429|US_Ankle^Ultrasound Ankle|||20240227045512|20240227045512||||||||13833^PHYSICIAN^Sarah||||52297429||20240227045512||US|F||1~^^^^^R
+OBX|1|TX|US_Ankle^Ultrasound Ankle||Diagnosis: Ankle||||||F|||20240227045512
+OBX|2|TX|US_Ankle^Ultrasound Ankle||Findings: Unremarkable findings.||||||F|||20240227045512
+OBX|3|TX|US_Ankle^Ultrasound Ankle||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20240227045512
+OBX|4|TX|US_Ankle^Ultrasound Ankle||Verified on: 2025/01/12 04:55:12||||||F|||20240227045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240630045512||ORU^R01|13683730|P|2.3
+PID|1||378820|378820|Patient^Taylor||19660101|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||55440^PHYSICIAN^Raj|55440^PHYSICIAN^Raj|55440^PHYSICIAN^Raj|MED||||7|||55440^PHYSICIAN^Raj|||||||||||||||||||||||||||20240630045512
+ORC|RE|||||||||||55440^PHYSICIAN^Raj
+OBR|1|13683730^STDOM|13683730|US_Ankle^Ultrasound Ankle|||20240630045512|20240630045512||||||||55440^PHYSICIAN^Raj||||13683730||20240630045512||US|F||1~^^^^^R
+OBX|1|TX|US_Ankle^Ultrasound Ankle||Diagnosis: Ankle||||||F|||20240630045512
+OBX|2|TX|US_Ankle^Ultrasound Ankle||Findings: Fracture identified in the ankle.||||||F|||20240630045512
+OBX|3|TX|US_Ankle^Ultrasound Ankle||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20240630045512
+OBX|4|TX|US_Ankle^Ultrasound Ankle||Verified on: 2025/01/12 04:55:12||||||F|||20240630045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240403045512||ORU^R01|81163231|P|2.3
+PID|1||850922|850922|Patient^Johnson||19901222|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||20722^PHYSICIAN^Sarah|20722^PHYSICIAN^Sarah|20722^PHYSICIAN^Sarah|MED||||7|||20722^PHYSICIAN^Sarah|||||||||||||||||||||||||||20240403045512
+ORC|RE|||||||||||20722^PHYSICIAN^Sarah
+OBR|1|81163231^STDOM|81163231|US_Spine^Ultrasound Spine|||20240403045512|20240403045512||||||||20722^PHYSICIAN^Sarah||||81163231||20240403045512||US|F||1~^^^^^R
+OBX|1|TX|US_Spine^Ultrasound Spine||Diagnosis: Spine||||||F|||20240403045512
+OBX|2|TX|US_Spine^Ultrasound Spine||Findings: Unremarkable findings.||||||F|||20240403045512
+OBX|3|TX|US_Spine^Ultrasound Spine||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20240403045512
+OBX|4|TX|US_Spine^Ultrasound Spine||Verified on: 2025/01/12 04:55:12||||||F|||20240403045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240925045512||ORU^R01|89496432|P|2.3
+PID|1||512445|512445|Patient^Smith||19730627|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||97008^PHYSICIAN^Anna|97008^PHYSICIAN^Anna|97008^PHYSICIAN^Anna|MED||||7|||97008^PHYSICIAN^Anna|||||||||||||||||||||||||||20240925045512
+ORC|RE|||||||||||97008^PHYSICIAN^Anna
+OBR|1|89496432^STDOM|89496432|XR_Spine^X-Ray Spine|||20240925045512|20240925045512||||||||97008^PHYSICIAN^Anna||||89496432||20240925045512||XR|F||1~^^^^^R
+OBX|1|TX|XR_Spine^X-Ray Spine||Diagnosis: Spine||||||F|||20240925045512
+OBX|2|TX|XR_Spine^X-Ray Spine||Findings: Localized mass detected, further evaluation recommended.||||||F|||20240925045512
+OBX|3|TX|XR_Spine^X-Ray Spine||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20240925045512
+OBX|4|TX|XR_Spine^X-Ray Spine||Verified on: 2025/01/12 04:55:12||||||F|||20240925045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20241101045512||ORU^R01|82598333|P|2.3
+PID|1||452907|452907|Patient^Johnson||19851104|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||77775^PHYSICIAN^Raj|77775^PHYSICIAN^Raj|77775^PHYSICIAN^Raj|MED||||7|||77775^PHYSICIAN^Raj|||||||||||||||||||||||||||20241101045512
+ORC|RE|||||||||||77775^PHYSICIAN^Raj
+OBR|1|82598333^STDOM|82598333|CT_Pelvis^CT Pelvis|||20241101045512|20241101045512||||||||77775^PHYSICIAN^Raj||||82598333||20241101045512||CT|F||1~^^^^^R
+OBX|1|TX|CT_Pelvis^CT Pelvis||Diagnosis: Pelvis||||||F|||20241101045512
+OBX|2|TX|CT_Pelvis^CT Pelvis||Findings: Evidence of mild degenerative changes.||||||F|||20241101045512
+OBX|3|TX|CT_Pelvis^CT Pelvis||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20241101045512
+OBX|4|TX|CT_Pelvis^CT Pelvis||Verified on: 2025/01/12 04:55:12||||||F|||20241101045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240201045512||ORU^R01|23477634|P|2.3
+PID|1||754862|754862|Patient^Smith||19880714|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||96194^PHYSICIAN^John|96194^PHYSICIAN^John|96194^PHYSICIAN^John|MED||||7|||96194^PHYSICIAN^John|||||||||||||||||||||||||||20240201045512
+ORC|RE|||||||||||96194^PHYSICIAN^John
+OBR|1|23477634^STDOM|23477634|US_Spine^Ultrasound Spine|||20240201045512|20240201045512||||||||96194^PHYSICIAN^John||||23477634||20240201045512||US|F||1~^^^^^R
+OBX|1|TX|US_Spine^Ultrasound Spine||Diagnosis: Spine||||||F|||20240201045512
+OBX|2|TX|US_Spine^Ultrasound Spine||Findings: Fracture identified in the spine.||||||F|||20240201045512
+OBX|3|TX|US_Spine^Ultrasound Spine||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20240201045512
+OBX|4|TX|US_Spine^Ultrasound Spine||Verified on: 2025/01/12 04:55:12||||||F|||20240201045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240824045512||ORU^R01|42275335|P|2.3
+PID|1||280285|280285|Patient^Johnson||19840116|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||27332^PHYSICIAN^Anna|27332^PHYSICIAN^Anna|27332^PHYSICIAN^Anna|MED||||7|||27332^PHYSICIAN^Anna|||||||||||||||||||||||||||20240824045512
+ORC|RE|||||||||||27332^PHYSICIAN^Anna
+OBR|1|42275335^STDOM|42275335|MG_Brain^Mammography Brain|||20240824045512|20240824045512||||||||27332^PHYSICIAN^Anna||||42275335||20240824045512||MG|F||1~^^^^^R
+OBX|1|TX|MG_Brain^Mammography Brain||Diagnosis: Brain||||||F|||20240824045512
+OBX|2|TX|MG_Brain^Mammography Brain||Findings: Evidence of mild degenerative changes.||||||F|||20240824045512
+OBX|3|TX|MG_Brain^Mammography Brain||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20240824045512
+OBX|4|TX|MG_Brain^Mammography Brain||Verified on: 2025/01/12 04:55:12||||||F|||20240824045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240627045512||ORU^R01|49682936|P|2.3
+PID|1||573915|573915|Patient^Smith||19551024|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||93339^PHYSICIAN^Raj|93339^PHYSICIAN^Raj|93339^PHYSICIAN^Raj|MED||||7|||93339^PHYSICIAN^Raj|||||||||||||||||||||||||||20240627045512
+ORC|RE|||||||||||93339^PHYSICIAN^Raj
+OBR|1|49682936^STDOM|49682936|US_Chest^Ultrasound Chest|||20240627045512|20240627045512||||||||93339^PHYSICIAN^Raj||||49682936||20240627045512||US|F||1~^^^^^R
+OBX|1|TX|US_Chest^Ultrasound Chest||Diagnosis: Chest||||||F|||20240627045512
+OBX|2|TX|US_Chest^Ultrasound Chest||Findings: Fracture identified in the chest.||||||F|||20240627045512
+OBX|3|TX|US_Chest^Ultrasound Chest||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20240627045512
+OBX|4|TX|US_Chest^Ultrasound Chest||Verified on: 2025/01/12 04:55:12||||||F|||20240627045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20241130045512||ORU^R01|55648337|P|2.3
+PID|1||209566|209566|Patient^Johnson||19970216|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||25241^PHYSICIAN^John|25241^PHYSICIAN^John|25241^PHYSICIAN^John|MED||||7|||25241^PHYSICIAN^John|||||||||||||||||||||||||||20241130045512
+ORC|RE|||||||||||25241^PHYSICIAN^John
+OBR|1|55648337^STDOM|55648337|NM_Abdomen^Nuclear Medicine Abdomen|||20241130045512|20241130045512||||||||25241^PHYSICIAN^John||||55648337||20241130045512||NM|F||1~^^^^^R
+OBX|1|TX|NM_Abdomen^Nuclear Medicine Abdomen||Diagnosis: Abdomen||||||F|||20241130045512
+OBX|2|TX|NM_Abdomen^Nuclear Medicine Abdomen||Findings: Localized mass detected, further evaluation recommended.||||||F|||20241130045512
+OBX|3|TX|NM_Abdomen^Nuclear Medicine Abdomen||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20241130045512
+OBX|4|TX|NM_Abdomen^Nuclear Medicine Abdomen||Verified on: 2025/01/12 04:55:12||||||F|||20241130045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20241106045512||ORU^R01|42452238|P|2.3
+PID|1||795591|795591|Patient^Johnson||19771210|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||88301^PHYSICIAN^David|88301^PHYSICIAN^David|88301^PHYSICIAN^David|MED||||7|||88301^PHYSICIAN^David|||||||||||||||||||||||||||20241106045512
+ORC|RE|||||||||||88301^PHYSICIAN^David
+OBR|1|42452238^STDOM|42452238|NM_Brain^Nuclear Medicine Brain|||20241106045512|20241106045512||||||||88301^PHYSICIAN^David||||42452238||20241106045512||NM|F||1~^^^^^R
+OBX|1|TX|NM_Brain^Nuclear Medicine Brain||Diagnosis: Brain||||||F|||20241106045512
+OBX|2|TX|NM_Brain^Nuclear Medicine Brain||Findings: No acute abnormalities detected.||||||F|||20241106045512
+OBX|3|TX|NM_Brain^Nuclear Medicine Brain||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20241106045512
+OBX|4|TX|NM_Brain^Nuclear Medicine Brain||Verified on: 2025/01/12 04:55:12||||||F|||20241106045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20241021045512||ORU^R01|89958739|P|2.3
+PID|1||739151|739151|Patient^Taylor||19520706|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||53498^PHYSICIAN^Raj|53498^PHYSICIAN^Raj|53498^PHYSICIAN^Raj|MED||||7|||53498^PHYSICIAN^Raj|||||||||||||||||||||||||||20241021045512
+ORC|RE|||||||||||53498^PHYSICIAN^Raj
+OBR|1|89958739^STDOM|89958739|CT_Neck^CT Neck|||20241021045512|20241021045512||||||||53498^PHYSICIAN^Raj||||89958739||20241021045512||CT|F||1~^^^^^R
+OBX|1|TX|CT_Neck^CT Neck||Diagnosis: Neck||||||F|||20241021045512
+OBX|2|TX|CT_Neck^CT Neck||Findings: Increased uptake in the neck, suggestive of cyst.||||||F|||20241021045512
+OBX|3|TX|CT_Neck^CT Neck||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20241021045512
+OBX|4|TX|CT_Neck^CT Neck||Verified on: 2025/01/12 04:55:12||||||F|||20241021045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240525045512||ORU^R01|94193540|P|2.3
+PID|1||390831|390831|Patient^Taylor||19990318|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||24960^PHYSICIAN^Sarah|24960^PHYSICIAN^Sarah|24960^PHYSICIAN^Sarah|MED||||7|||24960^PHYSICIAN^Sarah|||||||||||||||||||||||||||20240525045512
+ORC|RE|||||||||||24960^PHYSICIAN^Sarah
+OBR|1|94193540^STDOM|94193540|MG_Abdomen^Mammography Abdomen|||20240525045512|20240525045512||||||||24960^PHYSICIAN^Sarah||||94193540||20240525045512||MG|F||1~^^^^^R
+OBX|1|TX|MG_Abdomen^Mammography Abdomen||Diagnosis: Abdomen||||||F|||20240525045512
+OBX|2|TX|MG_Abdomen^Mammography Abdomen||Findings: Localized mass detected, further evaluation recommended.||||||F|||20240525045512
+OBX|3|TX|MG_Abdomen^Mammography Abdomen||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20240525045512
+OBX|4|TX|MG_Abdomen^Mammography Abdomen||Verified on: 2025/01/12 04:55:12||||||F|||20240525045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240314045512||ORU^R01|57809241|P|2.3
+PID|1||423388|423388|Patient^Wilson||20010510|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||64500^PHYSICIAN^John|64500^PHYSICIAN^John|64500^PHYSICIAN^John|MED||||7|||64500^PHYSICIAN^John|||||||||||||||||||||||||||20240314045512
+ORC|RE|||||||||||64500^PHYSICIAN^John
+OBR|1|57809241^STDOM|57809241|US_Chest^Ultrasound Chest|||20240314045512|20240314045512||||||||64500^PHYSICIAN^John||||57809241||20240314045512||US|F||1~^^^^^R
+OBX|1|TX|US_Chest^Ultrasound Chest||Diagnosis: Chest||||||F|||20240314045512
+OBX|2|TX|US_Chest^Ultrasound Chest||Findings: Localized mass detected, further evaluation recommended.||||||F|||20240314045512
+OBX|3|TX|US_Chest^Ultrasound Chest||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20240314045512
+OBX|4|TX|US_Chest^Ultrasound Chest||Verified on: 2025/01/12 04:55:12||||||F|||20240314045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240825045512||ORU^R01|46772142|P|2.3
+PID|1||492228|492228|Patient^Taylor||19680807|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||28236^PHYSICIAN^Raj|28236^PHYSICIAN^Raj|28236^PHYSICIAN^Raj|MED||||7|||28236^PHYSICIAN^Raj|||||||||||||||||||||||||||20240825045512
+ORC|RE|||||||||||28236^PHYSICIAN^Raj
+OBR|1|46772142^STDOM|46772142|XR_Brain^X-Ray Brain|||20240825045512|20240825045512||||||||28236^PHYSICIAN^Raj||||46772142||20240825045512||XR|F||1~^^^^^R
+OBX|1|TX|XR_Brain^X-Ray Brain||Diagnosis: Brain||||||F|||20240825045512
+OBX|2|TX|XR_Brain^X-Ray Brain||Findings: Unremarkable findings.||||||F|||20240825045512
+OBX|3|TX|XR_Brain^X-Ray Brain||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20240825045512
+OBX|4|TX|XR_Brain^X-Ray Brain||Verified on: 2025/01/12 04:55:12||||||F|||20240825045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240806045512||ORU^R01|50611043|P|2.3
+PID|1||825529|825529|Patient^Wilson||19671025|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||38231^PHYSICIAN^Raj|38231^PHYSICIAN^Raj|38231^PHYSICIAN^Raj|MED||||7|||38231^PHYSICIAN^Raj|||||||||||||||||||||||||||20240806045512
+ORC|RE|||||||||||38231^PHYSICIAN^Raj
+OBR|1|50611043^STDOM|50611043|NM_Knee^Nuclear Medicine Knee|||20240806045512|20240806045512||||||||38231^PHYSICIAN^Raj||||50611043||20240806045512||NM|F||1~^^^^^R
+OBX|1|TX|NM_Knee^Nuclear Medicine Knee||Diagnosis: Knee||||||F|||20240806045512
+OBX|2|TX|NM_Knee^Nuclear Medicine Knee||Findings: Minimal effusion noted.||||||F|||20240806045512
+OBX|3|TX|NM_Knee^Nuclear Medicine Knee||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20240806045512
+OBX|4|TX|NM_Knee^Nuclear Medicine Knee||Verified on: 2025/01/12 04:55:12||||||F|||20240806045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240229045512||ORU^R01|12009544|P|2.3
+PID|1||883971|883971|Patient^Smith||19730429|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||15188^PHYSICIAN^Raj|15188^PHYSICIAN^Raj|15188^PHYSICIAN^Raj|MED||||7|||15188^PHYSICIAN^Raj|||||||||||||||||||||||||||20240229045512
+ORC|RE|||||||||||15188^PHYSICIAN^Raj
+OBR|1|12009544^STDOM|12009544|MG_Pelvis^Mammography Pelvis|||20240229045512|20240229045512||||||||15188^PHYSICIAN^Raj||||12009544||20240229045512||MG|F||1~^^^^^R
+OBX|1|TX|MG_Pelvis^Mammography Pelvis||Diagnosis: Pelvis||||||F|||20240229045512
+OBX|2|TX|MG_Pelvis^Mammography Pelvis||Findings: Increased uptake in the pelvis, suggestive of fracture.||||||F|||20240229045512
+OBX|3|TX|MG_Pelvis^Mammography Pelvis||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20240229045512
+OBX|4|TX|MG_Pelvis^Mammography Pelvis||Verified on: 2025/01/12 04:55:12||||||F|||20240229045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240928045512||ORU^R01|18583345|P|2.3
+PID|1||184786|184786|Patient^Wilson||19710119|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||19167^PHYSICIAN^David|19167^PHYSICIAN^David|19167^PHYSICIAN^David|MED||||7|||19167^PHYSICIAN^David|||||||||||||||||||||||||||20240928045512
+ORC|RE|||||||||||19167^PHYSICIAN^David
+OBR|1|18583345^STDOM|18583345|NM_Head^Nuclear Medicine Head|||20240928045512|20240928045512||||||||19167^PHYSICIAN^David||||18583345||20240928045512||NM|F||1~^^^^^R
+OBX|1|TX|NM_Head^Nuclear Medicine Head||Diagnosis: Head||||||F|||20240928045512
+OBX|2|TX|NM_Head^Nuclear Medicine Head||Findings: Evidence of mild degenerative changes.||||||F|||20240928045512
+OBX|3|TX|NM_Head^Nuclear Medicine Head||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20240928045512
+OBX|4|TX|NM_Head^Nuclear Medicine Head||Verified on: 2025/01/12 04:55:12||||||F|||20240928045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20241126045512||ORU^R01|79416046|P|2.3
+PID|1||473975|473975|Patient^Taylor||19780930|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||28807^PHYSICIAN^John|28807^PHYSICIAN^John|28807^PHYSICIAN^John|MED||||7|||28807^PHYSICIAN^John|||||||||||||||||||||||||||20241126045512
+ORC|RE|||||||||||28807^PHYSICIAN^John
+OBR|1|79416046^STDOM|79416046|XR_Pelvis^X-Ray Pelvis|||20241126045512|20241126045512||||||||28807^PHYSICIAN^John||||79416046||20241126045512||XR|F||1~^^^^^R
+OBX|1|TX|XR_Pelvis^X-Ray Pelvis||Diagnosis: Pelvis||||||F|||20241126045512
+OBX|2|TX|XR_Pelvis^X-Ray Pelvis||Findings: No acute abnormalities detected.||||||F|||20241126045512
+OBX|3|TX|XR_Pelvis^X-Ray Pelvis||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20241126045512
+OBX|4|TX|XR_Pelvis^X-Ray Pelvis||Verified on: 2025/01/12 04:55:12||||||F|||20241126045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240902045512||ORU^R01|41153647|P|2.3
+PID|1||796929|796929|Patient^Wilson||20000826|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||62664^PHYSICIAN^David|62664^PHYSICIAN^David|62664^PHYSICIAN^David|MED||||7|||62664^PHYSICIAN^David|||||||||||||||||||||||||||20240902045512
+ORC|RE|||||||||||62664^PHYSICIAN^David
+OBR|1|41153647^STDOM|41153647|NM_Pelvis^Nuclear Medicine Pelvis|||20240902045512|20240902045512||||||||62664^PHYSICIAN^David||||41153647||20240902045512||NM|F||1~^^^^^R
+OBX|1|TX|NM_Pelvis^Nuclear Medicine Pelvis||Diagnosis: Pelvis||||||F|||20240902045512
+OBX|2|TX|NM_Pelvis^Nuclear Medicine Pelvis||Findings: Localized mass detected, further evaluation recommended.||||||F|||20240902045512
+OBX|3|TX|NM_Pelvis^Nuclear Medicine Pelvis||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20240902045512
+OBX|4|TX|NM_Pelvis^Nuclear Medicine Pelvis||Verified on: 2025/01/12 04:55:12||||||F|||20240902045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240804045512||ORU^R01|65330048|P|2.3
+PID|1||870375|870375|Patient^Johnson||19790823|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||30881^PHYSICIAN^John|30881^PHYSICIAN^John|30881^PHYSICIAN^John|MED||||7|||30881^PHYSICIAN^John|||||||||||||||||||||||||||20240804045512
+ORC|RE|||||||||||30881^PHYSICIAN^John
+OBR|1|65330048^STDOM|65330048|NM_Ankle^Nuclear Medicine Ankle|||20240804045512|20240804045512||||||||30881^PHYSICIAN^John||||65330048||20240804045512||NM|F||1~^^^^^R
+OBX|1|TX|NM_Ankle^Nuclear Medicine Ankle||Diagnosis: Ankle||||||F|||20240804045512
+OBX|2|TX|NM_Ankle^Nuclear Medicine Ankle||Findings: No signs of malignancy.||||||F|||20240804045512
+OBX|3|TX|NM_Ankle^Nuclear Medicine Ankle||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20240804045512
+OBX|4|TX|NM_Ankle^Nuclear Medicine Ankle||Verified on: 2025/01/12 04:55:12||||||F|||20240804045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20241003045512||ORU^R01|59968249|P|2.3
+PID|1||847454|847454|Patient^Johnson||20040908|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||63383^PHYSICIAN^John|63383^PHYSICIAN^John|63383^PHYSICIAN^John|MED||||7|||63383^PHYSICIAN^John|||||||||||||||||||||||||||20241003045512
+ORC|RE|||||||||||63383^PHYSICIAN^John
+OBR|1|59968249^STDOM|59968249|US_Spine^Ultrasound Spine|||20241003045512|20241003045512||||||||63383^PHYSICIAN^John||||59968249||20241003045512||US|F||1~^^^^^R
+OBX|1|TX|US_Spine^Ultrasound Spine||Diagnosis: Spine||||||F|||20241003045512
+OBX|2|TX|US_Spine^Ultrasound Spine||Findings: Fracture identified in the spine.||||||F|||20241003045512
+OBX|3|TX|US_Spine^Ultrasound Spine||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20241003045512
+OBX|4|TX|US_Spine^Ultrasound Spine||Verified on: 2025/01/12 04:55:12||||||F|||20241003045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240923045512||ORU^R01|50806350|P|2.3
+PID|1||999695|999695|Patient^Johnson||19740708|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||54158^PHYSICIAN^Anna|54158^PHYSICIAN^Anna|54158^PHYSICIAN^Anna|MED||||7|||54158^PHYSICIAN^Anna|||||||||||||||||||||||||||20240923045512
+ORC|RE|||||||||||54158^PHYSICIAN^Anna
+OBR|1|50806350^STDOM|50806350|NM_Knee^Nuclear Medicine Knee|||20240923045512|20240923045512||||||||54158^PHYSICIAN^Anna||||50806350||20240923045512||NM|F||1~^^^^^R
+OBX|1|TX|NM_Knee^Nuclear Medicine Knee||Diagnosis: Knee||||||F|||20240923045512
+OBX|2|TX|NM_Knee^Nuclear Medicine Knee||Findings: Minimal effusion noted.||||||F|||20240923045512
+OBX|3|TX|NM_Knee^Nuclear Medicine Knee||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20240923045512
+OBX|4|TX|NM_Knee^Nuclear Medicine Knee||Verified on: 2025/01/12 04:55:12||||||F|||20240923045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240423045512||ORU^R01|60089651|P|2.3
+PID|1||538564|538564|Patient^Johnson||19790926|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||81370^PHYSICIAN^John|81370^PHYSICIAN^John|81370^PHYSICIAN^John|MED||||7|||81370^PHYSICIAN^John|||||||||||||||||||||||||||20240423045512
+ORC|RE|||||||||||81370^PHYSICIAN^John
+OBR|1|60089651^STDOM|60089651|US_Head^Ultrasound Head|||20240423045512|20240423045512||||||||81370^PHYSICIAN^John||||60089651||20240423045512||US|F||1~^^^^^R
+OBX|1|TX|US_Head^Ultrasound Head||Diagnosis: Head||||||F|||20240423045512
+OBX|2|TX|US_Head^Ultrasound Head||Findings: Fracture identified in the head.||||||F|||20240423045512
+OBX|3|TX|US_Head^Ultrasound Head||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20240423045512
+OBX|4|TX|US_Head^Ultrasound Head||Verified on: 2025/01/12 04:55:12||||||F|||20240423045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240822045512||ORU^R01|69270752|P|2.3
+PID|1||148870|148870|Patient^Wilson||19930210|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||91188^PHYSICIAN^Raj|91188^PHYSICIAN^Raj|91188^PHYSICIAN^Raj|MED||||7|||91188^PHYSICIAN^Raj|||||||||||||||||||||||||||20240822045512
+ORC|RE|||||||||||91188^PHYSICIAN^Raj
+OBR|1|69270752^STDOM|69270752|NM_Shoulder^Nuclear Medicine Shoulder|||20240822045512|20240822045512||||||||91188^PHYSICIAN^Raj||||69270752||20240822045512||NM|F||1~^^^^^R
+OBX|1|TX|NM_Shoulder^Nuclear Medicine Shoulder||Diagnosis: Shoulder||||||F|||20240822045512
+OBX|2|TX|NM_Shoulder^Nuclear Medicine Shoulder||Findings: Minimal effusion noted.||||||F|||20240822045512
+OBX|3|TX|NM_Shoulder^Nuclear Medicine Shoulder||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20240822045512
+OBX|4|TX|NM_Shoulder^Nuclear Medicine Shoulder||Verified on: 2025/01/12 04:55:12||||||F|||20240822045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20241231045512||ORU^R01|27601153|P|2.3
+PID|1||409342|409342|Patient^Brown||19901212|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||21284^PHYSICIAN^Sarah|21284^PHYSICIAN^Sarah|21284^PHYSICIAN^Sarah|MED||||7|||21284^PHYSICIAN^Sarah|||||||||||||||||||||||||||20241231045512
+ORC|RE|||||||||||21284^PHYSICIAN^Sarah
+OBR|1|27601153^STDOM|27601153|CT_Neck^CT Neck|||20241231045512|20241231045512||||||||21284^PHYSICIAN^Sarah||||27601153||20241231045512||CT|F||1~^^^^^R
+OBX|1|TX|CT_Neck^CT Neck||Diagnosis: Neck||||||F|||20241231045512
+OBX|2|TX|CT_Neck^CT Neck||Findings: Evidence of mild degenerative changes.||||||F|||20241231045512
+OBX|3|TX|CT_Neck^CT Neck||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20241231045512
+OBX|4|TX|CT_Neck^CT Neck||Verified on: 2025/01/12 04:55:12||||||F|||20241231045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240319045512||ORU^R01|80200954|P|2.3
+PID|1||135487|135487|Patient^Smith||19760819|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||87835^PHYSICIAN^Raj|87835^PHYSICIAN^Raj|87835^PHYSICIAN^Raj|MED||||7|||87835^PHYSICIAN^Raj|||||||||||||||||||||||||||20240319045512
+ORC|RE|||||||||||87835^PHYSICIAN^Raj
+OBR|1|80200954^STDOM|80200954|NM_Neck^Nuclear Medicine Neck|||20240319045512|20240319045512||||||||87835^PHYSICIAN^Raj||||80200954||20240319045512||NM|F||1~^^^^^R
+OBX|1|TX|NM_Neck^Nuclear Medicine Neck||Diagnosis: Neck||||||F|||20240319045512
+OBX|2|TX|NM_Neck^Nuclear Medicine Neck||Findings: Evidence of mild degenerative changes.||||||F|||20240319045512
+OBX|3|TX|NM_Neck^Nuclear Medicine Neck||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20240319045512
+OBX|4|TX|NM_Neck^Nuclear Medicine Neck||Verified on: 2025/01/12 04:55:12||||||F|||20240319045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240602045512||ORU^R01|23011355|P|2.3
+PID|1||157999|157999|Patient^Johnson||19651130|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||43374^PHYSICIAN^Sarah|43374^PHYSICIAN^Sarah|43374^PHYSICIAN^Sarah|MED||||7|||43374^PHYSICIAN^Sarah|||||||||||||||||||||||||||20240602045512
+ORC|RE|||||||||||43374^PHYSICIAN^Sarah
+OBR|1|23011355^STDOM|23011355|CT_Ankle^CT Ankle|||20240602045512|20240602045512||||||||43374^PHYSICIAN^Sarah||||23011355||20240602045512||CT|F||1~^^^^^R
+OBX|1|TX|CT_Ankle^CT Ankle||Diagnosis: Ankle||||||F|||20240602045512
+OBX|2|TX|CT_Ankle^CT Ankle||Findings: Localized mass detected, further evaluation recommended.||||||F|||20240602045512
+OBX|3|TX|CT_Ankle^CT Ankle||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20240602045512
+OBX|4|TX|CT_Ankle^CT Ankle||Verified on: 2025/01/12 04:55:12||||||F|||20240602045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240426045512||ORU^R01|22364256|P|2.3
+PID|1||415829|415829|Patient^Brown||19720621|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||99098^PHYSICIAN^Anna|99098^PHYSICIAN^Anna|99098^PHYSICIAN^Anna|MED||||7|||99098^PHYSICIAN^Anna|||||||||||||||||||||||||||20240426045512
+ORC|RE|||||||||||99098^PHYSICIAN^Anna
+OBR|1|22364256^STDOM|22364256|CT_Chest^CT Chest|||20240426045512|20240426045512||||||||99098^PHYSICIAN^Anna||||22364256||20240426045512||CT|F||1~^^^^^R
+OBX|1|TX|CT_Chest^CT Chest||Diagnosis: Chest||||||F|||20240426045512
+OBX|2|TX|CT_Chest^CT Chest||Findings: Localized mass detected, further evaluation recommended.||||||F|||20240426045512
+OBX|3|TX|CT_Chest^CT Chest||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20240426045512
+OBX|4|TX|CT_Chest^CT Chest||Verified on: 2025/01/12 04:55:12||||||F|||20240426045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240627045512||ORU^R01|27469457|P|2.3
+PID|1||422112|422112|Patient^Brown||19920917|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||72299^PHYSICIAN^John|72299^PHYSICIAN^John|72299^PHYSICIAN^John|MED||||7|||72299^PHYSICIAN^John|||||||||||||||||||||||||||20240627045512
+ORC|RE|||||||||||72299^PHYSICIAN^John
+OBR|1|27469457^STDOM|27469457|XR_Chest^X-Ray Chest|||20240627045512|20240627045512||||||||72299^PHYSICIAN^John||||27469457||20240627045512||XR|F||1~^^^^^R
+OBX|1|TX|XR_Chest^X-Ray Chest||Diagnosis: Chest||||||F|||20240627045512
+OBX|2|TX|XR_Chest^X-Ray Chest||Findings: Increased uptake in the chest, suggestive of inflammation.||||||F|||20240627045512
+OBX|3|TX|XR_Chest^X-Ray Chest||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20240627045512
+OBX|4|TX|XR_Chest^X-Ray Chest||Verified on: 2025/01/12 04:55:12||||||F|||20240627045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240521045512||ORU^R01|56339758|P|2.3
+PID|1||502430|502430|Patient^Taylor||19670606|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||14573^PHYSICIAN^Raj|14573^PHYSICIAN^Raj|14573^PHYSICIAN^Raj|MED||||7|||14573^PHYSICIAN^Raj|||||||||||||||||||||||||||20240521045512
+ORC|RE|||||||||||14573^PHYSICIAN^Raj
+OBR|1|56339758^STDOM|56339758|CT_Brain^CT Brain|||20240521045512|20240521045512||||||||14573^PHYSICIAN^Raj||||56339758||20240521045512||CT|F||1~^^^^^R
+OBX|1|TX|CT_Brain^CT Brain||Diagnosis: Brain||||||F|||20240521045512
+OBX|2|TX|CT_Brain^CT Brain||Findings: Localized mass detected, further evaluation recommended.||||||F|||20240521045512
+OBX|3|TX|CT_Brain^CT Brain||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20240521045512
+OBX|4|TX|CT_Brain^CT Brain||Verified on: 2025/01/12 04:55:12||||||F|||20240521045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240617045512||ORU^R01|27339159|P|2.3
+PID|1||841451|841451|Patient^Taylor||19950412|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||25535^PHYSICIAN^David|25535^PHYSICIAN^David|25535^PHYSICIAN^David|MED||||7|||25535^PHYSICIAN^David|||||||||||||||||||||||||||20240617045512
+ORC|RE|||||||||||25535^PHYSICIAN^David
+OBR|1|27339159^STDOM|27339159|US_Spine^Ultrasound Spine|||20240617045512|20240617045512||||||||25535^PHYSICIAN^David||||27339159||20240617045512||US|F||1~^^^^^R
+OBX|1|TX|US_Spine^Ultrasound Spine||Diagnosis: Spine||||||F|||20240617045512
+OBX|2|TX|US_Spine^Ultrasound Spine||Findings: Fracture identified in the spine.||||||F|||20240617045512
+OBX|3|TX|US_Spine^Ultrasound Spine||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20240617045512
+OBX|4|TX|US_Spine^Ultrasound Spine||Verified on: 2025/01/12 04:55:12||||||F|||20240617045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240707045512||ORU^R01|70246760|P|2.3
+PID|1||843195|843195|Patient^Brown||19901002|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||61455^PHYSICIAN^Anna|61455^PHYSICIAN^Anna|61455^PHYSICIAN^Anna|MED||||7|||61455^PHYSICIAN^Anna|||||||||||||||||||||||||||20240707045512
+ORC|RE|||||||||||61455^PHYSICIAN^Anna
+OBR|1|70246760^STDOM|70246760|XR_Spine^X-Ray Spine|||20240707045512|20240707045512||||||||61455^PHYSICIAN^Anna||||70246760||20240707045512||XR|F||1~^^^^^R
+OBX|1|TX|XR_Spine^X-Ray Spine||Diagnosis: Spine||||||F|||20240707045512
+OBX|2|TX|XR_Spine^X-Ray Spine||Findings: Minimal effusion noted.||||||F|||20240707045512
+OBX|3|TX|XR_Spine^X-Ray Spine||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20240707045512
+OBX|4|TX|XR_Spine^X-Ray Spine||Verified on: 2025/01/12 04:55:12||||||F|||20240707045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240221045512||ORU^R01|71643561|P|2.3
+PID|1||476936|476936|Patient^Smith||19960206|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||42594^PHYSICIAN^David|42594^PHYSICIAN^David|42594^PHYSICIAN^David|MED||||7|||42594^PHYSICIAN^David|||||||||||||||||||||||||||20240221045512
+ORC|RE|||||||||||42594^PHYSICIAN^David
+OBR|1|71643561^STDOM|71643561|US_Brain^Ultrasound Brain|||20240221045512|20240221045512||||||||42594^PHYSICIAN^David||||71643561||20240221045512||US|F||1~^^^^^R
+OBX|1|TX|US_Brain^Ultrasound Brain||Diagnosis: Brain||||||F|||20240221045512
+OBX|2|TX|US_Brain^Ultrasound Brain||Findings: Fracture identified in the brain.||||||F|||20240221045512
+OBX|3|TX|US_Brain^Ultrasound Brain||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20240221045512
+OBX|4|TX|US_Brain^Ultrasound Brain||Verified on: 2025/01/12 04:55:12||||||F|||20240221045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240914045512||ORU^R01|61981662|P|2.3
+PID|1||583841|583841|Patient^Wilson||19841102|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||32621^PHYSICIAN^David|32621^PHYSICIAN^David|32621^PHYSICIAN^David|MED||||7|||32621^PHYSICIAN^David|||||||||||||||||||||||||||20240914045512
+ORC|RE|||||||||||32621^PHYSICIAN^David
+OBR|1|61981662^STDOM|61981662|NM_Ankle^Nuclear Medicine Ankle|||20240914045512|20240914045512||||||||32621^PHYSICIAN^David||||61981662||20240914045512||NM|F||1~^^^^^R
+OBX|1|TX|NM_Ankle^Nuclear Medicine Ankle||Diagnosis: Ankle||||||F|||20240914045512
+OBX|2|TX|NM_Ankle^Nuclear Medicine Ankle||Findings: Evidence of mild degenerative changes.||||||F|||20240914045512
+OBX|3|TX|NM_Ankle^Nuclear Medicine Ankle||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20240914045512
+OBX|4|TX|NM_Ankle^Nuclear Medicine Ankle||Verified on: 2025/01/12 04:55:12||||||F|||20240914045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240903045512||ORU^R01|30967563|P|2.3
+PID|1||981530|981530|Patient^Taylor||19510301|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||31210^PHYSICIAN^David|31210^PHYSICIAN^David|31210^PHYSICIAN^David|MED||||7|||31210^PHYSICIAN^David|||||||||||||||||||||||||||20240903045512
+ORC|RE|||||||||||31210^PHYSICIAN^David
+OBR|1|30967563^STDOM|30967563|NM_Abdomen^Nuclear Medicine Abdomen|||20240903045512|20240903045512||||||||31210^PHYSICIAN^David||||30967563||20240903045512||NM|F||1~^^^^^R
+OBX|1|TX|NM_Abdomen^Nuclear Medicine Abdomen||Diagnosis: Abdomen||||||F|||20240903045512
+OBX|2|TX|NM_Abdomen^Nuclear Medicine Abdomen||Findings: Fracture identified in the abdomen.||||||F|||20240903045512
+OBX|3|TX|NM_Abdomen^Nuclear Medicine Abdomen||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20240903045512
+OBX|4|TX|NM_Abdomen^Nuclear Medicine Abdomen||Verified on: 2025/01/12 04:55:12||||||F|||20240903045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240815045512||ORU^R01|10295064|P|2.3
+PID|1||621335|621335|Patient^Taylor||20010414|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||63916^PHYSICIAN^John|63916^PHYSICIAN^John|63916^PHYSICIAN^John|MED||||7|||63916^PHYSICIAN^John|||||||||||||||||||||||||||20240815045512
+ORC|RE|||||||||||63916^PHYSICIAN^John
+OBR|1|10295064^STDOM|10295064|NM_Spine^Nuclear Medicine Spine|||20240815045512|20240815045512||||||||63916^PHYSICIAN^John||||10295064||20240815045512||NM|F||1~^^^^^R
+OBX|1|TX|NM_Spine^Nuclear Medicine Spine||Diagnosis: Spine||||||F|||20240815045512
+OBX|2|TX|NM_Spine^Nuclear Medicine Spine||Findings: Fracture identified in the spine.||||||F|||20240815045512
+OBX|3|TX|NM_Spine^Nuclear Medicine Spine||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20240815045512
+OBX|4|TX|NM_Spine^Nuclear Medicine Spine||Verified on: 2025/01/12 04:55:12||||||F|||20240815045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20241102045512||ORU^R01|59956065|P|2.3
+PID|1||813572|813572|Patient^Johnson||19771021|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||50569^PHYSICIAN^Sarah|50569^PHYSICIAN^Sarah|50569^PHYSICIAN^Sarah|MED||||7|||50569^PHYSICIAN^Sarah|||||||||||||||||||||||||||20241102045512
+ORC|RE|||||||||||50569^PHYSICIAN^Sarah
+OBR|1|59956065^STDOM|59956065|CT_Ankle^CT Ankle|||20241102045512|20241102045512||||||||50569^PHYSICIAN^Sarah||||59956065||20241102045512||CT|F||1~^^^^^R
+OBX|1|TX|CT_Ankle^CT Ankle||Diagnosis: Ankle||||||F|||20241102045512
+OBX|2|TX|CT_Ankle^CT Ankle||Findings: Localized mass detected, further evaluation recommended.||||||F|||20241102045512
+OBX|3|TX|CT_Ankle^CT Ankle||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20241102045512
+OBX|4|TX|CT_Ankle^CT Ankle||Verified on: 2025/01/12 04:55:12||||||F|||20241102045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240816045512||ORU^R01|19546566|P|2.3
+PID|1||761125|761125|Patient^Johnson||19470131|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||85531^PHYSICIAN^John|85531^PHYSICIAN^John|85531^PHYSICIAN^John|MED||||7|||85531^PHYSICIAN^John|||||||||||||||||||||||||||20240816045512
+ORC|RE|||||||||||85531^PHYSICIAN^John
+OBR|1|19546566^STDOM|19546566|MG_Abdomen^Mammography Abdomen|||20240816045512|20240816045512||||||||85531^PHYSICIAN^John||||19546566||20240816045512||MG|F||1~^^^^^R
+OBX|1|TX|MG_Abdomen^Mammography Abdomen||Diagnosis: Abdomen||||||F|||20240816045512
+OBX|2|TX|MG_Abdomen^Mammography Abdomen||Findings: Increased uptake in the abdomen, suggestive of inflammation.||||||F|||20240816045512
+OBX|3|TX|MG_Abdomen^Mammography Abdomen||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20240816045512
+OBX|4|TX|MG_Abdomen^Mammography Abdomen||Verified on: 2025/01/12 04:55:12||||||F|||20240816045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240401045512||ORU^R01|87106267|P|2.3
+PID|1||352521|352521|Patient^Taylor||19750907|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||87177^PHYSICIAN^David|87177^PHYSICIAN^David|87177^PHYSICIAN^David|MED||||7|||87177^PHYSICIAN^David|||||||||||||||||||||||||||20240401045512
+ORC|RE|||||||||||87177^PHYSICIAN^David
+OBR|1|87106267^STDOM|87106267|XR_Abdomen^X-Ray Abdomen|||20240401045512|20240401045512||||||||87177^PHYSICIAN^David||||87106267||20240401045512||XR|F||1~^^^^^R
+OBX|1|TX|XR_Abdomen^X-Ray Abdomen||Diagnosis: Abdomen||||||F|||20240401045512
+OBX|2|TX|XR_Abdomen^X-Ray Abdomen||Findings: Minimal effusion noted.||||||F|||20240401045512
+OBX|3|TX|XR_Abdomen^X-Ray Abdomen||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20240401045512
+OBX|4|TX|XR_Abdomen^X-Ray Abdomen||Verified on: 2025/01/12 04:55:12||||||F|||20240401045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240511045512||ORU^R01|84950968|P|2.3
+PID|1||226448|226448|Patient^Wilson||19910316|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||40076^PHYSICIAN^Anna|40076^PHYSICIAN^Anna|40076^PHYSICIAN^Anna|MED||||7|||40076^PHYSICIAN^Anna|||||||||||||||||||||||||||20240511045512
+ORC|RE|||||||||||40076^PHYSICIAN^Anna
+OBR|1|84950968^STDOM|84950968|NM_Ankle^Nuclear Medicine Ankle|||20240511045512|20240511045512||||||||40076^PHYSICIAN^Anna||||84950968||20240511045512||NM|F||1~^^^^^R
+OBX|1|TX|NM_Ankle^Nuclear Medicine Ankle||Diagnosis: Ankle||||||F|||20240511045512
+OBX|2|TX|NM_Ankle^Nuclear Medicine Ankle||Findings: Localized mass detected, further evaluation recommended.||||||F|||20240511045512
+OBX|3|TX|NM_Ankle^Nuclear Medicine Ankle||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20240511045512
+OBX|4|TX|NM_Ankle^Nuclear Medicine Ankle||Verified on: 2025/01/12 04:55:12||||||F|||20240511045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240305045512||ORU^R01|43995469|P|2.3
+PID|1||163737|163737|Patient^Smith||20040624|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||93319^PHYSICIAN^Sarah|93319^PHYSICIAN^Sarah|93319^PHYSICIAN^Sarah|MED||||7|||93319^PHYSICIAN^Sarah|||||||||||||||||||||||||||20240305045512
+ORC|RE|||||||||||93319^PHYSICIAN^Sarah
+OBR|1|43995469^STDOM|43995469|CT_Neck^CT Neck|||20240305045512|20240305045512||||||||93319^PHYSICIAN^Sarah||||43995469||20240305045512||CT|F||1~^^^^^R
+OBX|1|TX|CT_Neck^CT Neck||Diagnosis: Neck||||||F|||20240305045512
+OBX|2|TX|CT_Neck^CT Neck||Findings: Increased uptake in the neck, suggestive of fracture.||||||F|||20240305045512
+OBX|3|TX|CT_Neck^CT Neck||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20240305045512
+OBX|4|TX|CT_Neck^CT Neck||Verified on: 2025/01/12 04:55:12||||||F|||20240305045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20250105045512||ORU^R01|85529070|P|2.3
+PID|1||598037|598037|Patient^Brown||19670321|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||54506^PHYSICIAN^Sarah|54506^PHYSICIAN^Sarah|54506^PHYSICIAN^Sarah|MED||||7|||54506^PHYSICIAN^Sarah|||||||||||||||||||||||||||20250105045512
+ORC|RE|||||||||||54506^PHYSICIAN^Sarah
+OBR|1|85529070^STDOM|85529070|MG_Knee^Mammography Knee|||20250105045512|20250105045512||||||||54506^PHYSICIAN^Sarah||||85529070||20250105045512||MG|F||1~^^^^^R
+OBX|1|TX|MG_Knee^Mammography Knee||Diagnosis: Knee||||||F|||20250105045512
+OBX|2|TX|MG_Knee^Mammography Knee||Findings: Unremarkable findings.||||||F|||20250105045512
+OBX|3|TX|MG_Knee^Mammography Knee||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20250105045512
+OBX|4|TX|MG_Knee^Mammography Knee||Verified on: 2025/01/12 04:55:12||||||F|||20250105045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240412045512||ORU^R01|94059771|P|2.3
+PID|1||131257|131257|Patient^Taylor||19921229|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||56690^PHYSICIAN^John|56690^PHYSICIAN^John|56690^PHYSICIAN^John|MED||||7|||56690^PHYSICIAN^John|||||||||||||||||||||||||||20240412045512
+ORC|RE|||||||||||56690^PHYSICIAN^John
+OBR|1|94059771^STDOM|94059771|NM_Knee^Nuclear Medicine Knee|||20240412045512|20240412045512||||||||56690^PHYSICIAN^John||||94059771||20240412045512||NM|F||1~^^^^^R
+OBX|1|TX|NM_Knee^Nuclear Medicine Knee||Diagnosis: Knee||||||F|||20240412045512
+OBX|2|TX|NM_Knee^Nuclear Medicine Knee||Findings: Increased uptake in the knee, suggestive of inflammation.||||||F|||20240412045512
+OBX|3|TX|NM_Knee^Nuclear Medicine Knee||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20240412045512
+OBX|4|TX|NM_Knee^Nuclear Medicine Knee||Verified on: 2025/01/12 04:55:12||||||F|||20240412045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20250102045512||ORU^R01|37284372|P|2.3
+PID|1||961992|961992|Patient^Smith||19910310|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||82644^PHYSICIAN^Raj|82644^PHYSICIAN^Raj|82644^PHYSICIAN^Raj|MED||||7|||82644^PHYSICIAN^Raj|||||||||||||||||||||||||||20250102045512
+ORC|RE|||||||||||82644^PHYSICIAN^Raj
+OBR|1|37284372^STDOM|37284372|US_Neck^Ultrasound Neck|||20250102045512|20250102045512||||||||82644^PHYSICIAN^Raj||||37284372||20250102045512||US|F||1~^^^^^R
+OBX|1|TX|US_Neck^Ultrasound Neck||Diagnosis: Neck||||||F|||20250102045512
+OBX|2|TX|US_Neck^Ultrasound Neck||Findings: Increased uptake in the neck, suggestive of fracture.||||||F|||20250102045512
+OBX|3|TX|US_Neck^Ultrasound Neck||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20250102045512
+OBX|4|TX|US_Neck^Ultrasound Neck||Verified on: 2025/01/12 04:55:12||||||F|||20250102045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240122045512||ORU^R01|91228773|P|2.3
+PID|1||168312|168312|Patient^Johnson||19821027|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||16192^PHYSICIAN^Raj|16192^PHYSICIAN^Raj|16192^PHYSICIAN^Raj|MED||||7|||16192^PHYSICIAN^Raj|||||||||||||||||||||||||||20240122045512
+ORC|RE|||||||||||16192^PHYSICIAN^Raj
+OBR|1|91228773^STDOM|91228773|US_Shoulder^Ultrasound Shoulder|||20240122045512|20240122045512||||||||16192^PHYSICIAN^Raj||||91228773||20240122045512||US|F||1~^^^^^R
+OBX|1|TX|US_Shoulder^Ultrasound Shoulder||Diagnosis: Shoulder||||||F|||20240122045512
+OBX|2|TX|US_Shoulder^Ultrasound Shoulder||Findings: Unremarkable findings.||||||F|||20240122045512
+OBX|3|TX|US_Shoulder^Ultrasound Shoulder||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20240122045512
+OBX|4|TX|US_Shoulder^Ultrasound Shoulder||Verified on: 2025/01/12 04:55:12||||||F|||20240122045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240530045512||ORU^R01|51682474|P|2.3
+PID|1||130775|130775|Patient^Johnson||19910704|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||39315^PHYSICIAN^David|39315^PHYSICIAN^David|39315^PHYSICIAN^David|MED||||7|||39315^PHYSICIAN^David|||||||||||||||||||||||||||20240530045512
+ORC|RE|||||||||||39315^PHYSICIAN^David
+OBR|1|51682474^STDOM|51682474|NM_Spine^Nuclear Medicine Spine|||20240530045512|20240530045512||||||||39315^PHYSICIAN^David||||51682474||20240530045512||NM|F||1~^^^^^R
+OBX|1|TX|NM_Spine^Nuclear Medicine Spine||Diagnosis: Spine||||||F|||20240530045512
+OBX|2|TX|NM_Spine^Nuclear Medicine Spine||Findings: Unremarkable findings.||||||F|||20240530045512
+OBX|3|TX|NM_Spine^Nuclear Medicine Spine||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20240530045512
+OBX|4|TX|NM_Spine^Nuclear Medicine Spine||Verified on: 2025/01/12 04:55:12||||||F|||20240530045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20250108045512||ORU^R01|81100475|P|2.3
+PID|1||655580|655580|Patient^Wilson||19731207|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||38432^PHYSICIAN^David|38432^PHYSICIAN^David|38432^PHYSICIAN^David|MED||||7|||38432^PHYSICIAN^David|||||||||||||||||||||||||||20250108045512
+ORC|RE|||||||||||38432^PHYSICIAN^David
+OBR|1|81100475^STDOM|81100475|CT_Knee^CT Knee|||20250108045512|20250108045512||||||||38432^PHYSICIAN^David||||81100475||20250108045512||CT|F||1~^^^^^R
+OBX|1|TX|CT_Knee^CT Knee||Diagnosis: Knee||||||F|||20250108045512
+OBX|2|TX|CT_Knee^CT Knee||Findings: Unremarkable findings.||||||F|||20250108045512
+OBX|3|TX|CT_Knee^CT Knee||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20250108045512
+OBX|4|TX|CT_Knee^CT Knee||Verified on: 2025/01/12 04:55:12||||||F|||20250108045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20241204045512||ORU^R01|29149576|P|2.3
+PID|1||349274|349274|Patient^Taylor||19800823|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||88875^PHYSICIAN^Sarah|88875^PHYSICIAN^Sarah|88875^PHYSICIAN^Sarah|MED||||7|||88875^PHYSICIAN^Sarah|||||||||||||||||||||||||||20241204045512
+ORC|RE|||||||||||88875^PHYSICIAN^Sarah
+OBR|1|29149576^STDOM|29149576|MG_Abdomen^Mammography Abdomen|||20241204045512|20241204045512||||||||88875^PHYSICIAN^Sarah||||29149576||20241204045512||MG|F||1~^^^^^R
+OBX|1|TX|MG_Abdomen^Mammography Abdomen||Diagnosis: Abdomen||||||F|||20241204045512
+OBX|2|TX|MG_Abdomen^Mammography Abdomen||Findings: Localized mass detected, further evaluation recommended.||||||F|||20241204045512
+OBX|3|TX|MG_Abdomen^Mammography Abdomen||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20241204045512
+OBX|4|TX|MG_Abdomen^Mammography Abdomen||Verified on: 2025/01/12 04:55:12||||||F|||20241204045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240302045512||ORU^R01|45523877|P|2.3
+PID|1||221077|221077|Patient^Brown||19450531|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||40152^PHYSICIAN^Raj|40152^PHYSICIAN^Raj|40152^PHYSICIAN^Raj|MED||||7|||40152^PHYSICIAN^Raj|||||||||||||||||||||||||||20240302045512
+ORC|RE|||||||||||40152^PHYSICIAN^Raj
+OBR|1|45523877^STDOM|45523877|CT_Abdomen^CT Abdomen|||20240302045512|20240302045512||||||||40152^PHYSICIAN^Raj||||45523877||20240302045512||CT|F||1~^^^^^R
+OBX|1|TX|CT_Abdomen^CT Abdomen||Diagnosis: Abdomen||||||F|||20240302045512
+OBX|2|TX|CT_Abdomen^CT Abdomen||Findings: Fracture identified in the abdomen.||||||F|||20240302045512
+OBX|3|TX|CT_Abdomen^CT Abdomen||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20240302045512
+OBX|4|TX|CT_Abdomen^CT Abdomen||Verified on: 2025/01/12 04:55:12||||||F|||20240302045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240714045512||ORU^R01|50732378|P|2.3
+PID|1||410559|410559|Patient^Smith||19860121|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||27937^PHYSICIAN^Raj|27937^PHYSICIAN^Raj|27937^PHYSICIAN^Raj|MED||||7|||27937^PHYSICIAN^Raj|||||||||||||||||||||||||||20240714045512
+ORC|RE|||||||||||27937^PHYSICIAN^Raj
+OBR|1|50732378^STDOM|50732378|XR_Brain^X-Ray Brain|||20240714045512|20240714045512||||||||27937^PHYSICIAN^Raj||||50732378||20240714045512||XR|F||1~^^^^^R
+OBX|1|TX|XR_Brain^X-Ray Brain||Diagnosis: Brain||||||F|||20240714045512
+OBX|2|TX|XR_Brain^X-Ray Brain||Findings: Minimal effusion noted.||||||F|||20240714045512
+OBX|3|TX|XR_Brain^X-Ray Brain||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20240714045512
+OBX|4|TX|XR_Brain^X-Ray Brain||Verified on: 2025/01/12 04:55:12||||||F|||20240714045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240730045512||ORU^R01|19184579|P|2.3
+PID|1||593569|593569|Patient^Taylor||19691115|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||81780^PHYSICIAN^David|81780^PHYSICIAN^David|81780^PHYSICIAN^David|MED||||7|||81780^PHYSICIAN^David|||||||||||||||||||||||||||20240730045512
+ORC|RE|||||||||||81780^PHYSICIAN^David
+OBR|1|19184579^STDOM|19184579|MG_Shoulder^Mammography Shoulder|||20240730045512|20240730045512||||||||81780^PHYSICIAN^David||||19184579||20240730045512||MG|F||1~^^^^^R
+OBX|1|TX|MG_Shoulder^Mammography Shoulder||Diagnosis: Shoulder||||||F|||20240730045512
+OBX|2|TX|MG_Shoulder^Mammography Shoulder||Findings: Fracture identified in the shoulder.||||||F|||20240730045512
+OBX|3|TX|MG_Shoulder^Mammography Shoulder||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20240730045512
+OBX|4|TX|MG_Shoulder^Mammography Shoulder||Verified on: 2025/01/12 04:55:12||||||F|||20240730045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240819045512||ORU^R01|71119980|P|2.3
+PID|1||491181|491181|Patient^Taylor||19870815|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||33969^PHYSICIAN^John|33969^PHYSICIAN^John|33969^PHYSICIAN^John|MED||||7|||33969^PHYSICIAN^John|||||||||||||||||||||||||||20240819045512
+ORC|RE|||||||||||33969^PHYSICIAN^John
+OBR|1|71119980^STDOM|71119980|US_Shoulder^Ultrasound Shoulder|||20240819045512|20240819045512||||||||33969^PHYSICIAN^John||||71119980||20240819045512||US|F||1~^^^^^R
+OBX|1|TX|US_Shoulder^Ultrasound Shoulder||Diagnosis: Shoulder||||||F|||20240819045512
+OBX|2|TX|US_Shoulder^Ultrasound Shoulder||Findings: Unremarkable findings.||||||F|||20240819045512
+OBX|3|TX|US_Shoulder^Ultrasound Shoulder||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20240819045512
+OBX|4|TX|US_Shoulder^Ultrasound Shoulder||Verified on: 2025/01/12 04:55:12||||||F|||20240819045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240222045512||ORU^R01|59984281|P|2.3
+PID|1||267285|267285|Patient^Wilson||19460205|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||88623^PHYSICIAN^John|88623^PHYSICIAN^John|88623^PHYSICIAN^John|MED||||7|||88623^PHYSICIAN^John|||||||||||||||||||||||||||20240222045512
+ORC|RE|||||||||||88623^PHYSICIAN^John
+OBR|1|59984281^STDOM|59984281|US_Knee^Ultrasound Knee|||20240222045512|20240222045512||||||||88623^PHYSICIAN^John||||59984281||20240222045512||US|F||1~^^^^^R
+OBX|1|TX|US_Knee^Ultrasound Knee||Diagnosis: Knee||||||F|||20240222045512
+OBX|2|TX|US_Knee^Ultrasound Knee||Findings: No acute abnormalities detected.||||||F|||20240222045512
+OBX|3|TX|US_Knee^Ultrasound Knee||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20240222045512
+OBX|4|TX|US_Knee^Ultrasound Knee||Verified on: 2025/01/12 04:55:12||||||F|||20240222045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20250104045512||ORU^R01|23444382|P|2.3
+PID|1||873514|873514|Patient^Johnson||19690422|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||62986^PHYSICIAN^Raj|62986^PHYSICIAN^Raj|62986^PHYSICIAN^Raj|MED||||7|||62986^PHYSICIAN^Raj|||||||||||||||||||||||||||20250104045512
+ORC|RE|||||||||||62986^PHYSICIAN^Raj
+OBR|1|23444382^STDOM|23444382|XR_Shoulder^X-Ray Shoulder|||20250104045512|20250104045512||||||||62986^PHYSICIAN^Raj||||23444382||20250104045512||XR|F||1~^^^^^R
+OBX|1|TX|XR_Shoulder^X-Ray Shoulder||Diagnosis: Shoulder||||||F|||20250104045512
+OBX|2|TX|XR_Shoulder^X-Ray Shoulder||Findings: Localized mass detected, further evaluation recommended.||||||F|||20250104045512
+OBX|3|TX|XR_Shoulder^X-Ray Shoulder||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20250104045512
+OBX|4|TX|XR_Shoulder^X-Ray Shoulder||Verified on: 2025/01/12 04:55:12||||||F|||20250104045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240821045512||ORU^R01|23432283|P|2.3
+PID|1||266479|266479|Patient^Smith||19490517|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||55355^PHYSICIAN^Anna|55355^PHYSICIAN^Anna|55355^PHYSICIAN^Anna|MED||||7|||55355^PHYSICIAN^Anna|||||||||||||||||||||||||||20240821045512
+ORC|RE|||||||||||55355^PHYSICIAN^Anna
+OBR|1|23432283^STDOM|23432283|XR_Spine^X-Ray Spine|||20240821045512|20240821045512||||||||55355^PHYSICIAN^Anna||||23432283||20240821045512||XR|F||1~^^^^^R
+OBX|1|TX|XR_Spine^X-Ray Spine||Diagnosis: Spine||||||F|||20240821045512
+OBX|2|TX|XR_Spine^X-Ray Spine||Findings: No acute abnormalities detected.||||||F|||20240821045512
+OBX|3|TX|XR_Spine^X-Ray Spine||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20240821045512
+OBX|4|TX|XR_Spine^X-Ray Spine||Verified on: 2025/01/12 04:55:12||||||F|||20240821045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240317045512||ORU^R01|73936684|P|2.3
+PID|1||669827|669827|Patient^Smith||19620704|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||86413^PHYSICIAN^Anna|86413^PHYSICIAN^Anna|86413^PHYSICIAN^Anna|MED||||7|||86413^PHYSICIAN^Anna|||||||||||||||||||||||||||20240317045512
+ORC|RE|||||||||||86413^PHYSICIAN^Anna
+OBR|1|73936684^STDOM|73936684|NM_Brain^Nuclear Medicine Brain|||20240317045512|20240317045512||||||||86413^PHYSICIAN^Anna||||73936684||20240317045512||NM|F||1~^^^^^R
+OBX|1|TX|NM_Brain^Nuclear Medicine Brain||Diagnosis: Brain||||||F|||20240317045512
+OBX|2|TX|NM_Brain^Nuclear Medicine Brain||Findings: Minimal effusion noted.||||||F|||20240317045512
+OBX|3|TX|NM_Brain^Nuclear Medicine Brain||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20240317045512
+OBX|4|TX|NM_Brain^Nuclear Medicine Brain||Verified on: 2025/01/12 04:55:12||||||F|||20240317045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240816045512||ORU^R01|32863985|P|2.3
+PID|1||145081|145081|Patient^Taylor||19980525|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||67569^PHYSICIAN^Raj|67569^PHYSICIAN^Raj|67569^PHYSICIAN^Raj|MED||||7|||67569^PHYSICIAN^Raj|||||||||||||||||||||||||||20240816045512
+ORC|RE|||||||||||67569^PHYSICIAN^Raj
+OBR|1|32863985^STDOM|32863985|CT_Ankle^CT Ankle|||20240816045512|20240816045512||||||||67569^PHYSICIAN^Raj||||32863985||20240816045512||CT|F||1~^^^^^R
+OBX|1|TX|CT_Ankle^CT Ankle||Diagnosis: Ankle||||||F|||20240816045512
+OBX|2|TX|CT_Ankle^CT Ankle||Findings: No signs of malignancy.||||||F|||20240816045512
+OBX|3|TX|CT_Ankle^CT Ankle||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20240816045512
+OBX|4|TX|CT_Ankle^CT Ankle||Verified on: 2025/01/12 04:55:12||||||F|||20240816045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20241118045512||ORU^R01|20845186|P|2.3
+PID|1||805806|805806|Patient^Johnson||19860427|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||17120^PHYSICIAN^John|17120^PHYSICIAN^John|17120^PHYSICIAN^John|MED||||7|||17120^PHYSICIAN^John|||||||||||||||||||||||||||20241118045512
+ORC|RE|||||||||||17120^PHYSICIAN^John
+OBR|1|20845186^STDOM|20845186|NM_Spine^Nuclear Medicine Spine|||20241118045512|20241118045512||||||||17120^PHYSICIAN^John||||20845186||20241118045512||NM|F||1~^^^^^R
+OBX|1|TX|NM_Spine^Nuclear Medicine Spine||Diagnosis: Spine||||||F|||20241118045512
+OBX|2|TX|NM_Spine^Nuclear Medicine Spine||Findings: Increased uptake in the spine, suggestive of fracture.||||||F|||20241118045512
+OBX|3|TX|NM_Spine^Nuclear Medicine Spine||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20241118045512
+OBX|4|TX|NM_Spine^Nuclear Medicine Spine||Verified on: 2025/01/12 04:55:12||||||F|||20241118045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240811045512||ORU^R01|95307287|P|2.3
+PID|1||948193|948193|Patient^Wilson||19930903|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||56844^PHYSICIAN^Sarah|56844^PHYSICIAN^Sarah|56844^PHYSICIAN^Sarah|MED||||7|||56844^PHYSICIAN^Sarah|||||||||||||||||||||||||||20240811045512
+ORC|RE|||||||||||56844^PHYSICIAN^Sarah
+OBR|1|95307287^STDOM|95307287|MG_Chest^Mammography Chest|||20240811045512|20240811045512||||||||56844^PHYSICIAN^Sarah||||95307287||20240811045512||MG|F||1~^^^^^R
+OBX|1|TX|MG_Chest^Mammography Chest||Diagnosis: Chest||||||F|||20240811045512
+OBX|2|TX|MG_Chest^Mammography Chest||Findings: Localized mass detected, further evaluation recommended.||||||F|||20240811045512
+OBX|3|TX|MG_Chest^Mammography Chest||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20240811045512
+OBX|4|TX|MG_Chest^Mammography Chest||Verified on: 2025/01/12 04:55:12||||||F|||20240811045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240621045512||ORU^R01|26925188|P|2.3
+PID|1||288971|288971|Patient^Brown||19871127|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||69040^PHYSICIAN^David|69040^PHYSICIAN^David|69040^PHYSICIAN^David|MED||||7|||69040^PHYSICIAN^David|||||||||||||||||||||||||||20240621045512
+ORC|RE|||||||||||69040^PHYSICIAN^David
+OBR|1|26925188^STDOM|26925188|NM_Shoulder^Nuclear Medicine Shoulder|||20240621045512|20240621045512||||||||69040^PHYSICIAN^David||||26925188||20240621045512||NM|F||1~^^^^^R
+OBX|1|TX|NM_Shoulder^Nuclear Medicine Shoulder||Diagnosis: Shoulder||||||F|||20240621045512
+OBX|2|TX|NM_Shoulder^Nuclear Medicine Shoulder||Findings: Unremarkable findings.||||||F|||20240621045512
+OBX|3|TX|NM_Shoulder^Nuclear Medicine Shoulder||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20240621045512
+OBX|4|TX|NM_Shoulder^Nuclear Medicine Shoulder||Verified on: 2025/01/12 04:55:12||||||F|||20240621045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20241015045512||ORU^R01|89197989|P|2.3
+PID|1||431289|431289|Patient^Brown||19800331|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||67592^PHYSICIAN^Sarah|67592^PHYSICIAN^Sarah|67592^PHYSICIAN^Sarah|MED||||7|||67592^PHYSICIAN^Sarah|||||||||||||||||||||||||||20241015045512
+ORC|RE|||||||||||67592^PHYSICIAN^Sarah
+OBR|1|89197989^STDOM|89197989|MG_Knee^Mammography Knee|||20241015045512|20241015045512||||||||67592^PHYSICIAN^Sarah||||89197989||20241015045512||MG|F||1~^^^^^R
+OBX|1|TX|MG_Knee^Mammography Knee||Diagnosis: Knee||||||F|||20241015045512
+OBX|2|TX|MG_Knee^Mammography Knee||Findings: Increased uptake in the knee, suggestive of fracture.||||||F|||20241015045512
+OBX|3|TX|MG_Knee^Mammography Knee||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20241015045512
+OBX|4|TX|MG_Knee^Mammography Knee||Verified on: 2025/01/12 04:55:12||||||F|||20241015045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240612045512||ORU^R01|69362490|P|2.3
+PID|1||209252|209252|Patient^Smith||20010111|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||87189^PHYSICIAN^John|87189^PHYSICIAN^John|87189^PHYSICIAN^John|MED||||7|||87189^PHYSICIAN^John|||||||||||||||||||||||||||20240612045512
+ORC|RE|||||||||||87189^PHYSICIAN^John
+OBR|1|69362490^STDOM|69362490|NM_Pelvis^Nuclear Medicine Pelvis|||20240612045512|20240612045512||||||||87189^PHYSICIAN^John||||69362490||20240612045512||NM|F||1~^^^^^R
+OBX|1|TX|NM_Pelvis^Nuclear Medicine Pelvis||Diagnosis: Pelvis||||||F|||20240612045512
+OBX|2|TX|NM_Pelvis^Nuclear Medicine Pelvis||Findings: No acute abnormalities detected.||||||F|||20240612045512
+OBX|3|TX|NM_Pelvis^Nuclear Medicine Pelvis||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20240612045512
+OBX|4|TX|NM_Pelvis^Nuclear Medicine Pelvis||Verified on: 2025/01/12 04:55:12||||||F|||20240612045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20241102045512||ORU^R01|58985191|P|2.3
+PID|1||219947|219947|Patient^Brown||19611013|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||56851^PHYSICIAN^Anna|56851^PHYSICIAN^Anna|56851^PHYSICIAN^Anna|MED||||7|||56851^PHYSICIAN^Anna|||||||||||||||||||||||||||20241102045512
+ORC|RE|||||||||||56851^PHYSICIAN^Anna
+OBR|1|58985191^STDOM|58985191|MG_Pelvis^Mammography Pelvis|||20241102045512|20241102045512||||||||56851^PHYSICIAN^Anna||||58985191||20241102045512||MG|F||1~^^^^^R
+OBX|1|TX|MG_Pelvis^Mammography Pelvis||Diagnosis: Pelvis||||||F|||20241102045512
+OBX|2|TX|MG_Pelvis^Mammography Pelvis||Findings: Localized mass detected, further evaluation recommended.||||||F|||20241102045512
+OBX|3|TX|MG_Pelvis^Mammography Pelvis||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20241102045512
+OBX|4|TX|MG_Pelvis^Mammography Pelvis||Verified on: 2025/01/12 04:55:12||||||F|||20241102045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240724045512||ORU^R01|61805792|P|2.3
+PID|1||100859|100859|Patient^Taylor||19730227|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||94459^PHYSICIAN^Anna|94459^PHYSICIAN^Anna|94459^PHYSICIAN^Anna|MED||||7|||94459^PHYSICIAN^Anna|||||||||||||||||||||||||||20240724045512
+ORC|RE|||||||||||94459^PHYSICIAN^Anna
+OBR|1|61805792^STDOM|61805792|CT_Head^CT Head|||20240724045512|20240724045512||||||||94459^PHYSICIAN^Anna||||61805792||20240724045512||CT|F||1~^^^^^R
+OBX|1|TX|CT_Head^CT Head||Diagnosis: Head||||||F|||20240724045512
+OBX|2|TX|CT_Head^CT Head||Findings: Unremarkable findings.||||||F|||20240724045512
+OBX|3|TX|CT_Head^CT Head||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20240724045512
+OBX|4|TX|CT_Head^CT Head||Verified on: 2025/01/12 04:55:12||||||F|||20240724045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240419045512||ORU^R01|42524493|P|2.3
+PID|1||429504|429504|Patient^Wilson||19540604|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||28490^PHYSICIAN^Anna|28490^PHYSICIAN^Anna|28490^PHYSICIAN^Anna|MED||||7|||28490^PHYSICIAN^Anna|||||||||||||||||||||||||||20240419045512
+ORC|RE|||||||||||28490^PHYSICIAN^Anna
+OBR|1|42524493^STDOM|42524493|CT_Pelvis^CT Pelvis|||20240419045512|20240419045512||||||||28490^PHYSICIAN^Anna||||42524493||20240419045512||CT|F||1~^^^^^R
+OBX|1|TX|CT_Pelvis^CT Pelvis||Diagnosis: Pelvis||||||F|||20240419045512
+OBX|2|TX|CT_Pelvis^CT Pelvis||Findings: No acute abnormalities detected.||||||F|||20240419045512
+OBX|3|TX|CT_Pelvis^CT Pelvis||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20240419045512
+OBX|4|TX|CT_Pelvis^CT Pelvis||Verified on: 2025/01/12 04:55:12||||||F|||20240419045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240718045512||ORU^R01|45868794|P|2.3
+PID|1||805954|805954|Patient^Wilson||20000201|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||45665^PHYSICIAN^John|45665^PHYSICIAN^John|45665^PHYSICIAN^John|MED||||7|||45665^PHYSICIAN^John|||||||||||||||||||||||||||20240718045512
+ORC|RE|||||||||||45665^PHYSICIAN^John
+OBR|1|45868794^STDOM|45868794|CT_Shoulder^CT Shoulder|||20240718045512|20240718045512||||||||45665^PHYSICIAN^John||||45868794||20240718045512||CT|F||1~^^^^^R
+OBX|1|TX|CT_Shoulder^CT Shoulder||Diagnosis: Shoulder||||||F|||20240718045512
+OBX|2|TX|CT_Shoulder^CT Shoulder||Findings: Unremarkable findings.||||||F|||20240718045512
+OBX|3|TX|CT_Shoulder^CT Shoulder||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20240718045512
+OBX|4|TX|CT_Shoulder^CT Shoulder||Verified on: 2025/01/12 04:55:12||||||F|||20240718045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240919045512||ORU^R01|87667295|P|2.3
+PID|1||604646|604646|Patient^Johnson||19841012|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||96750^PHYSICIAN^Anna|96750^PHYSICIAN^Anna|96750^PHYSICIAN^Anna|MED||||7|||96750^PHYSICIAN^Anna|||||||||||||||||||||||||||20240919045512
+ORC|RE|||||||||||96750^PHYSICIAN^Anna
+OBR|1|87667295^STDOM|87667295|US_Ankle^Ultrasound Ankle|||20240919045512|20240919045512||||||||96750^PHYSICIAN^Anna||||87667295||20240919045512||US|F||1~^^^^^R
+OBX|1|TX|US_Ankle^Ultrasound Ankle||Diagnosis: Ankle||||||F|||20240919045512
+OBX|2|TX|US_Ankle^Ultrasound Ankle||Findings: Minimal effusion noted.||||||F|||20240919045512
+OBX|3|TX|US_Ankle^Ultrasound Ankle||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20240919045512
+OBX|4|TX|US_Ankle^Ultrasound Ankle||Verified on: 2025/01/12 04:55:12||||||F|||20240919045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240709045512||ORU^R01|27573796|P|2.3
+PID|1||755854|755854|Patient^Johnson||19820410|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||95270^PHYSICIAN^Sarah|95270^PHYSICIAN^Sarah|95270^PHYSICIAN^Sarah|MED||||7|||95270^PHYSICIAN^Sarah|||||||||||||||||||||||||||20240709045512
+ORC|RE|||||||||||95270^PHYSICIAN^Sarah
+OBR|1|27573796^STDOM|27573796|XR_Knee^X-Ray Knee|||20240709045512|20240709045512||||||||95270^PHYSICIAN^Sarah||||27573796||20240709045512||XR|F||1~^^^^^R
+OBX|1|TX|XR_Knee^X-Ray Knee||Diagnosis: Knee||||||F|||20240709045512
+OBX|2|TX|XR_Knee^X-Ray Knee||Findings: Fracture identified in the knee.||||||F|||20240709045512
+OBX|3|TX|XR_Knee^X-Ray Knee||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20240709045512
+OBX|4|TX|XR_Knee^X-Ray Knee||Verified on: 2025/01/12 04:55:12||||||F|||20240709045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240812045512||ORU^R01|71897697|P|2.3
+PID|1||299521|299521|Patient^Taylor||19970408|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||15811^PHYSICIAN^Sarah|15811^PHYSICIAN^Sarah|15811^PHYSICIAN^Sarah|MED||||7|||15811^PHYSICIAN^Sarah|||||||||||||||||||||||||||20240812045512
+ORC|RE|||||||||||15811^PHYSICIAN^Sarah
+OBR|1|71897697^STDOM|71897697|NM_Pelvis^Nuclear Medicine Pelvis|||20240812045512|20240812045512||||||||15811^PHYSICIAN^Sarah||||71897697||20240812045512||NM|F||1~^^^^^R
+OBX|1|TX|NM_Pelvis^Nuclear Medicine Pelvis||Diagnosis: Pelvis||||||F|||20240812045512
+OBX|2|TX|NM_Pelvis^Nuclear Medicine Pelvis||Findings: Evidence of mild degenerative changes.||||||F|||20240812045512
+OBX|3|TX|NM_Pelvis^Nuclear Medicine Pelvis||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20240812045512
+OBX|4|TX|NM_Pelvis^Nuclear Medicine Pelvis||Verified on: 2025/01/12 04:55:12||||||F|||20240812045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240729045512||ORU^R01|91761198|P|2.3
+PID|1||960906|960906|Patient^Smith||19560807|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||26780^PHYSICIAN^Raj|26780^PHYSICIAN^Raj|26780^PHYSICIAN^Raj|MED||||7|||26780^PHYSICIAN^Raj|||||||||||||||||||||||||||20240729045512
+ORC|RE|||||||||||26780^PHYSICIAN^Raj
+OBR|1|91761198^STDOM|91761198|NM_Neck^Nuclear Medicine Neck|||20240729045512|20240729045512||||||||26780^PHYSICIAN^Raj||||91761198||20240729045512||NM|F||1~^^^^^R
+OBX|1|TX|NM_Neck^Nuclear Medicine Neck||Diagnosis: Neck||||||F|||20240729045512
+OBX|2|TX|NM_Neck^Nuclear Medicine Neck||Findings: Localized mass detected, further evaluation recommended.||||||F|||20240729045512
+OBX|3|TX|NM_Neck^Nuclear Medicine Neck||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20240729045512
+OBX|4|TX|NM_Neck^Nuclear Medicine Neck||Verified on: 2025/01/12 04:55:12||||||F|||20240729045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20250103045512||ORU^R01|70752099|P|2.3
+PID|1||230890|230890|Patient^Johnson||19610812|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||80553^PHYSICIAN^Anna|80553^PHYSICIAN^Anna|80553^PHYSICIAN^Anna|MED||||7|||80553^PHYSICIAN^Anna|||||||||||||||||||||||||||20250103045512
+ORC|RE|||||||||||80553^PHYSICIAN^Anna
+OBR|1|70752099^STDOM|70752099|MG_Pelvis^Mammography Pelvis|||20250103045512|20250103045512||||||||80553^PHYSICIAN^Anna||||70752099||20250103045512||MG|F||1~^^^^^R
+OBX|1|TX|MG_Pelvis^Mammography Pelvis||Diagnosis: Pelvis||||||F|||20250103045512
+OBX|2|TX|MG_Pelvis^Mammography Pelvis||Findings: Unremarkable findings.||||||F|||20250103045512
+OBX|3|TX|MG_Pelvis^Mammography Pelvis||Report prepared and electronically signed by Diane C. Brown, MD.||||||F|||20250103045512
+OBX|4|TX|MG_Pelvis^Mammography Pelvis||Verified on: 2025/01/12 04:55:12||||||F|||20250103045512
+
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20240403045512||ORU^R01|232522100|P|2.3
+PID|1||773188|773188|Patient^Taylor||19790219|F||||011||||M|||123-89-4567|||N||||||||N
+PV1|1|I||EM|||93474^PHYSICIAN^David|93474^PHYSICIAN^David|93474^PHYSICIAN^David|MED||||7|||93474^PHYSICIAN^David|||||||||||||||||||||||||||20240403045512
+ORC|RE|||||||||||93474^PHYSICIAN^David
+OBR|1|232522100^STDOM|232522100|MG_Neck^Mammography Neck|||20240403045512|20240403045512||||||||93474^PHYSICIAN^David||||232522100||20240403045512||MG|F||1~^^^^^R
+OBX|1|TX|MG_Neck^Mammography Neck||Diagnosis: Neck||||||F|||20240403045512
+OBX|2|TX|MG_Neck^Mammography Neck||Findings: Evidence of mild degenerative changes.||||||F|||20240403045512
+OBX|3|TX|MG_Neck^Mammography Neck||Report prepared and electronically signed by Randall S. Smith, MD.||||||F|||20240403045512
+OBX|4|TX|MG_Neck^Mammography Neck||Verified on: 2025/01/12 04:55:12||||||F|||20240403045512
