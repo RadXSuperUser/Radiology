@@ -6,7 +6,7 @@
 # Known bug: If there is more than one file to be converted, it will convert one correctly and move it to pdf_dir but for the files that follow, it will detect a pdf already converted and not rename the other files according to the logic and keep the original file names. **** This is a bug that needs to be fixed ****
 # Requirements: pdfme library, chardet library, pillow library (for .jpeg images)
 # For pdfme library documentation, please visit: https://pdfme.readthedocs.io/en/latest/
-
+ 
 import json
 import os
 from pdfme import build_pdf
