@@ -1,0 +1,63 @@
+# Radiology Repository
+
+## Overview
+This repository hosts a collection of scripts designed for Radiology IT environments, including PACS (Picture Archiving and Communication System), HL7 (Health Level Seven International), and RIS (Radiology Information System). These scripts aim to facilitate various tasks and processes within these systems and the peripheral systems that support their infrastructure.
+
+## Features
+- **Customizable Scripts**: All scripts in this repository are customizable to fit specific needs and requirements of different Radiology IT environments.
+- **Bug Fixes and Updates**: Changes to the scripts will be made as needed to address current and unknown bugs, ensuring they remain functional and up-to-date.
+- **Open Source Licensing**: The scripts are released under an open-source license, allowing anyone to use, modify, and distribute them freely.
+- **No Commercial Support**: These scripts are provided as-is without any commercial support. Users are encouraged to contribute to the repository by reporting issues and submitting improvements.
+
+## Usage
+To use the scripts in this repository, follow these steps:
+
+1. **Clone the repository to your local machine**:
+    ```sh
+    git clone https://github.com/RadXSuperUser/Radiology.git
+    ```
+
+2. **Navigate to the directory containing the script you want to use**:
+    ```sh
+    cd radiology-it-scripts/script-directory
+    ```
+
+3. **Customize the script as needed to fit your environment**.
+
+4. **Execute the script according to the provided instructions**.
+
+### Windows Environment
+You can also pull the repository into a Windows environment. Follow these steps:
+
+1. **Open Command Prompt or PowerShell**.
+
+2. **Navigate to the directory where you want to clone the repository**:
+    ```sh
+    cd path\to\your\directory
+    ```
+
+3. **Clone the repository**:
+    ```sh
+    git clone https://github.com/RadXSuperUser/Radiology.git
+    ```
+
+4. **Navigate to the directory containing the script you want to use**:
+    ```sh
+    cd radiology-it-scripts\script-directory
+    ```
+
+5. **Customize the script as needed to fit your environment**.
+
+6. **Execute the script according to the provided instructions**.
+
+### Copy and Paste
+Alternatively, you can copy and paste the scripts directly from the repository's website on GitHub. Navigate to the desired script file on GitHub, select the code, and copy it to your clipboard. Then, paste it into a new file on your local machine.
+
+## Contributing
+We welcome contributions from the community. If you encounter any issues or have suggestions for improvements, please open an issue or submit a pull request.
+
+## License
+This repository is licensed under the [MIT License](LICENSE). By contributing to this repository, you agree that your contributions will be licensed under the same license.
+
+## Disclaimer
+These scripts are provided without any warranty. Use them at your own risk. The maintainers are not responsible for any damage or data loss that may occur from using these scripts.
