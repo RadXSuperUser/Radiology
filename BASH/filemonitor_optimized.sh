@@ -97,7 +97,7 @@ inotifywait -m -e close_write -e moved_to --format "%w%f" "$MONITOR_DIR" 2>>"LOG
             wait_for_file_complete "$NEW_FILE"
             mv "$NEW_FILE" "$FAX_DIR/"
             log_message "FAX_FILE" "Moved FAX file to $FAX_DIR: $BASENAME"
-            /usr/bin/python3.12 -u "$FAX_SCRIPT" 2>> "$LOG_FILE" | tee -a "$LOG_FILE"
+            /opt/radx-workflow/bin/python -u "$FAX_SCRIPT" 2>> "$LOG_FILE" | tee -a "$LOG_FILE"
         else
             log_message "FAX_FILE_ERR" "FAX file not readable or does not exist: $NEW_FILE"
         fi
@@ -112,7 +112,7 @@ inotifywait -m -e close_write -e moved_to --format "%w%f" "$MONITOR_DIR" 2>>"LOG
             mv -v "$NEW_FILE" "$PRELIM_DIR/"
             MOVED_FILE="$PRELIM_DIR/$BASENAME"
             log_message "PRELIM_SR" "Moved PRELIM file to /PrelimSR: $BASENAME"
-            /usr/bin/python3.12 -u "$PRELIM_DIR/.prelimSR.py" "$MOVED_FILE" 2>> "$LOG_FILE" | tee -a "$LOG_FILE"
+            /opt/radx-workflow/bin/python -u "$PRELIM_DIR/.prelimSR.py" "$MOVED_FILE" 2>> "$LOG_FILE" | tee -a "$LOG_FILE"
         else
             log_message "PRELIM_SR_ERR" "PRELIM file not readable or does not exist: $NEW_FILE"
         fi
@@ -129,11 +129,11 @@ inotifywait -m -e close_write -e moved_to --format "%w%f" "$MONITOR_DIR" 2>>"LOG
 
         # Check if script accepts file argument (optimized version)
         if grep -q "sys.argv" "$HL7toDICOM_SCRIPT" 2>/dev/null; then
-            /usr/bin/python3.12 -u "$HL7toDICOM_SCRIPT" "$NEW_FILE" 2>> "$LOG_FILE" | tee -a "$LOG_FILE"
+            /opt/radx-workflow/bin/python -u "$HL7toDICOM_SCRIPT" "$NEW_FILE" 2>> "$LOG_FILE" | tee -a "$LOG_FILE"
         else
             # Fallback: old behavior (script scans directory itself)
             cd "$MONITOR_DIR" || { log_message "BASH_ERR" "Failed to change directory to $MONITOR_DIR"; exit 1; }
-            /usr/bin/python3.12 -u "$HL7toDICOM_SCRIPT" 2>> "$LOG_FILE" | tee -a "$LOG_FILE"
+            /opt/radx-workflow/bin/python -u "$HL7toDICOM_SCRIPT" 2>> "$LOG_FILE" | tee -a "$LOG_FILE"
         fi
     else
         log_message "BASH_ERR" "File not readable or does not exist: $NEW_FILE"
