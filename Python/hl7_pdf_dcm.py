@@ -11,23 +11,29 @@ from pdf2image import convert_from_path
 # Converts HL7 files containing base64-encoded PDF data in OBX-5 segments to PDF, then to JPEG, and finally to DICOM format.
 # Use case: Convert preliminary reports from nighthawk providers to DICOM format for PACS posting when RIS cannot accept prelims.
 # Generated PDFs can be used for automated faxing (see ORU2pdf.py), encrypted email distribution, Samba network folder drops, or Azure API uploads to SharePoint.
+# SEE hl7_pdf_dcm.md FOR FULL DETAILS!
 # Updated: Accepts file path as command-line argument instead of polling directory for improved efficiency.
 
-# Setup logging to print to terminal
+# Isolated log file for this script (filemonitor redirects here; detailed logs stay out of main log)
+HL7_LOG_DIR = "/var/lib/filemonitor/HL7toDICOM/logs"
+HL7_LOG_FILE = os.path.join(HL7_LOG_DIR, "hl7_pdf_dcm.log")
+os.makedirs(HL7_LOG_DIR, exist_ok=True)
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
-    datefmt="%Y-%m-%d %H:%M:%S"
+    datefmt="%Y-%m-%d %H:%M:%S",
+    handlers=[logging.FileHandler(HL7_LOG_FILE, encoding="utf-8")],
 )
+log = logging.getLogger(__name__)
 
 # Directory paths (relative to script location or absolute)
 # These can be overridden via environment variables
 base_dir = os.path.dirname(os.path.abspath(__file__)) if "__file__" in globals() else os.getcwd()
-hl7_dir = os.path.join(base_dir, "HL7/")
-pdf_dir = os.path.join(base_dir, "PDFs/")
-dcm_dir = os.path.join(base_dir, "DICOM/")
-error_dir = os.path.join(base_dir, "pdf2dcmERROR/")
-jpeg_dir = os.path.join(base_dir, "JPEGs/")
+hl7_dir = os.path.join(base_dir, "/var/lib/filemonitor/HL7toDICOM/HL7/")
+pdf_dir = os.path.join(base_dir, "/var/lib/filemonitor/HL7toDICOM/PDFs/")
+dcm_dir = os.path.join(base_dir, "/var/lib/filemonitor/HL7toDICOM/DICOM/")
+error_dir = os.path.join(base_dir, "/var/lib/filemonitor/HL7toDICOM/pdf2dcmERROR/")
+jpeg_dir = os.path.join(base_dir, "/var/lib/filemonitor/HL7toDICOM/JPEGs/")
 
 # Ensure directories exist
 os.makedirs(hl7_dir, exist_ok=True)
@@ -40,11 +46,11 @@ def wait_for_file_complete(file_path, max_wait=30, check_interval=0.5):
     """Wait for file to be completely written (file size stable)."""
     if not os.path.exists(file_path):
         return False
-    
+
     last_size = -1
     stable_count = 0
     required_stable = 2  # File size must be stable for 2 checks
-    
+
     for _ in range(int(max_wait / check_interval)):
         try:
             current_size = os.path.getsize(file_path)
@@ -96,22 +102,22 @@ def process_hl7_file(hl7_file_path):
     """Process a single HL7 file. Returns True on success, False on error."""
     # Initialize variables for error reporting
     pid_5 = pid_3 = pid_7 = obr_3 = obr_4_2 = obx_11 = None
-    
-    logging.info(f"Processing file: {hl7_file_path}")
-    
+
+    log.info("Processing file: %s", hl7_file_path)
+
     # Check if file exists and is readable
     if not os.path.exists(hl7_file_path):
-        logging.error(f"File does not exist: {hl7_file_path}")
+        log.error("File does not exist: %s", hl7_file_path)
         return False
-    
+
     if not os.access(hl7_file_path, os.R_OK):
-        logging.error(f"File is not readable: {hl7_file_path}")
+        log.error("File is not readable: %s", hl7_file_path)
         return False
-    
+
     # Wait for file to be completely written
     if not wait_for_file_complete(hl7_file_path):
-        logging.warning(f"File may still be writing: {hl7_file_path}, proceeding anyway")
-    
+        log.warning("File may still be writing: %s, proceeding anyway", hl7_file_path)
+
     try:
         with open(hl7_file_path, "r", encoding='utf-8', errors='ignore') as file:
             hl7_message = file.read()
@@ -148,7 +154,7 @@ def process_hl7_file(hl7_file_path):
         # Step 1: Decode Base64 PDF
         if not base64_pdf:
             raise ValueError("No base64 PDF data found in HL7 message")
-        
+
         base64_pdf_cleaned = base64_pdf.replace("^^PDF^Base64^", "").replace("\n", "").replace("\r", "")
         padding_needed = len(base64_pdf_cleaned) % 4
         if padding_needed:
@@ -161,7 +167,7 @@ def process_hl7_file(hl7_file_path):
 
         with open(output_pdf_path, "wb") as pdf_file:
             pdf_file.write(pdf_binary)
-        logging.info(f"PDF successfully saved as {output_pdf_path}")
+        log.info("PDF saved: %s", output_pdf_path)
 
         # Step 2: Convert PDF to JPEG
         try:
@@ -169,7 +175,7 @@ def process_hl7_file(hl7_file_path):
             if not images:
                 raise ValueError("No pages found in PDF for JPEG conversion.")
             images[0].save(output_jpg_path, 'JPEG')
-            logging.info(f"JPEG created: {output_jpg_path}")
+            log.info("JPEG created: %s", output_jpg_path)
         except Exception as e:
             raise ValueError(f"Failed to convert PDF to JPEG: {e}")
 
@@ -188,39 +194,35 @@ def process_hl7_file(hl7_file_path):
 
         try:
             result = subprocess.run(img2dcm_command, check=True, capture_output=True, text=True)
-            logging.info(f"DICOM file created: {output_dcm_path}")
+            log.info("DICOM created: %s", output_dcm_path)
         except subprocess.CalledProcessError as e:
             raise ValueError(f"img2dcm failed: {e.stderr if e.stderr else str(e)}")
 
         # Move processed file to archive
         shutil.move(hl7_file_path, os.path.join(hl7_dir, os.path.basename(hl7_file_path)))
-        logging.info(f"Moved HL7 file to {hl7_dir}")
+        log.info("Moved HL7 to archive: %s", hl7_dir)
         return True
 
     except Exception as e:
-        logging.error(f"Error processing file {hl7_file_path}: {e}")
-        logging.error(f"PID-5: {pid_5}")
-        logging.error(f"PID-3: {pid_3}")
-        logging.error(f"PID-7: {pid_7}")
-        logging.error(f"OBR-3: {obr_3}")
-        logging.error(f"OBR-4-2: {obr_4_2}")
-        logging.error(f"OBX-11: {obx_11}")
-        
+        log.error("Error processing %s: %s", hl7_file_path, e)
+        log.error("Context: PID-5=%s PID-3=%s PID-7=%s OBR-3=%s OBR-4-2=%s OBX-11=%s", pid_5, pid_3, pid_7, obr_3, obr_4_2, obx_11)
+
         # Move error file
         try:
             shutil.move(hl7_file_path, os.path.join(error_dir, os.path.basename(hl7_file_path)))
-            logging.info(f"Moved error file to {error_dir}")
+            log.info("Moved error file to: %s", error_dir)
         except Exception as move_error:
-            logging.error(f"Failed to move error file: {move_error}")
+            log.error("Failed to move error file: %s", move_error)
         return False
+
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        logging.error("Usage: python3 hl7_pdf_dcm_optimized.py <hl7_file_path>")
-        logging.error("This script processes a single HL7 file provided as an argument.")
-        logging.error("For directory monitoring, use filemonitor.sh with inotifywait.")
+        log.error("Usage: hl7_pdf_dcm.py <hl7_file_path>")
         sys.exit(1)
-    
+
     hl7_file_path = sys.argv[1]
+    log.info("hl7_pdf_dcm started for: %s", hl7_file_path)
     success = process_hl7_file(hl7_file_path)
+    log.info("hl7_pdf_dcm finished: %s", "ok" if success else "err")
     sys.exit(0 if success else 1)

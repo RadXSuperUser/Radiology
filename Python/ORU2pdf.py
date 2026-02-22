@@ -1,19 +1,31 @@
 # This script is used to convert ORU messages structured as json files into pdf files. Please see the sampleORU text files in the "Text Files" folder for an example of the ORU message structure. The orignal text files were produced using Corepoint Integration Engine and forwarded to an interface connected the server hosting this script.
-# 1. The script will convert the ORU messages into json files and then into pdf files. 
+# 1. The script will convert the ORU messages into json files and then into pdf files.
 # 2. The pdf files will be renamed based on the fax number and accession number found in the json files, however this can be changed by modifying the "fax_key" and "accn_key" variables in the script.
 # 3. The script will also add a logo to the pdf files and can also be customized by modifying the "image" key in the "document" dictionary under the "create_pdf_from_json" function.
-# Errors will be printed to the console if the script encounters any issues with the files.
 # Known bug: If there is more than one file to be converted, it will convert one correctly and move it to pdf_dir but for the files that follow, it will detect a pdf already converted and not rename the other files according to the logic and keep the original file names. **** This is a bug that needs to be fixed ****
 # Requirements: pdfme library, chardet library, pillow library (for .jpeg images)
 # For pdfme library documentation, please visit: https://pdfme.readthedocs.io/en/latest/
- 
+
 import json
+import logging
 import os
-from pdfme import build_pdf
+import time
 import glob
 import chardet
-import re
-import time
+from pdfme import build_pdf
+
+# Isolated log file for this script (filemonitor redirects here; no need to clutter main log)
+LOG_DIR = "/var/lib/filemonitor/FAX/logs"
+LOG_FILE = os.path.join(LOG_DIR, "ORU2pdf.log")
+os.makedirs(LOG_DIR, exist_ok=True)
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    datefmt="%Y-%m-%d %H:%M:%S",
+    handlers=[logging.FileHandler(LOG_FILE, encoding="utf-8")],
+)
+log = logging.getLogger(__name__)
+
 check_mark = "\u2713"
 
 def process_json_data(json_data):
@@ -52,7 +64,7 @@ def create_pdf_from_json(json_data, filename, pdf_dir):
                 "style": {"page_numbering_style": "roman"},
                 "running_sections": ["footer"],
                 "content": [
-                    {"image": "path/to/image/logo.png"},
+                    {"image": "/opt/radx-workflow/photos/radxsulogo.png"},
                     json_data
                 ],
             }
@@ -80,11 +92,12 @@ def read_json_data(directory, pdf_dir, json_dir):
 
             new_filename = os.path.join(json_dir, os.path.basename(filename))
             os.rename(filename, new_filename)
+            log.info("Converted JSON to PDF and moved JSON: %s -> %s", os.path.basename(filename), json_dir)
 
         except FileNotFoundError:
-            print(f"Error: File not found - {filename}")
+            log.error("File not found: %s", filename)
         except json.JSONDecodeError as e:
-            print(f"Error: Invalid JSON data in {filename}: {e}")
+            log.error("Invalid JSON in %s: %s", filename, e)
 
 def rename_pdfs_with_json_key(pdf_dir, json_dir, fax_key, accn_key):
     for filename in os.listdir(pdf_dir):
@@ -95,10 +108,9 @@ def rename_pdfs_with_json_key(pdf_dir, json_dir, fax_key, accn_key):
         json_path = os.path.join(json_dir, f"{os.path.splitext(filename)[0]}.json")
 
         if rename_pdf_with_json_key(pdf_path, json_path, fax_key, accn_key):
-            print(f"-------------")
-            time.sleep(.5)
+            time.sleep(0.5)
         else:
-            print(f"Error renaming PDF: {filename}")
+            log.error("Failed to rename PDF: %s", filename)
 
 def rename_pdf_with_json_key(pdf_path, json_path, fax_key, accn_key):
     filename, _ = os.path.splitext(os.path.basename(pdf_path))
@@ -112,7 +124,7 @@ def rename_pdf_with_json_key(pdf_path, json_path, fax_key, accn_key):
         with open(json_path, 'r', encoding=encoding) as f:
             json_data = json.load(f)
     except json.JSONDecodeError as e:
-        print(f"Error: Invalid JSON data in {json_path}: {e}")
+        log.error("Invalid JSON in %s: %s", json_path, e)
         return False
 
     try:
@@ -121,36 +133,39 @@ def rename_pdf_with_json_key(pdf_path, json_path, fax_key, accn_key):
         accn_value = json_data[accn_key]
         new_name = f"fax={{1{new_fax_value}}}ACCN-{accn_value}"
     except KeyError:
-        print(f"Warning: Key(s) '{fax_key}' or '{accn_key}' not found in JSON data. Using original filename.")
+        log.warning("Key(s) '%s' or '%s' not found in JSON; using original filename.", fax_key, accn_key)
         new_name = os.path.splitext(filename)[0]
 
     new_pdf_path = os.path.join(os.path.dirname(pdf_path), f"{new_name}.pdf")
 
     try:
         os.rename(pdf_path, new_pdf_path)
-        print(f"PDF renamed successfully: {filename} --> {new_name} {check_mark}")
+        log.info("PDF renamed: %s -> %s %s", filename, new_name, check_mark)
         return True
     except OSError as e:
-        print(f"Error renaming PDF: {e}")
+        log.error("Rename failed: %s", e)
         return False
 
 def convert_txt_to_json(directory):
     for txt_filename in glob.glob(os.path.join(directory, "*.txt")):
         json_filename = os.path.splitext(txt_filename)[0] + ".json"
         os.rename(txt_filename, json_filename)
-        print(f"Converted {txt_filename} --> {json_filename} {check_mark}")
-        print(f"-------------")
-        time.sleep(.5)
+        log.info("Converted txt to JSON: %s -> %s %s", os.path.basename(txt_filename), os.path.basename(json_filename), check_mark)
+        time.sleep(0.5)
 
-directory = "path/to/directory"
-pdf_dir = "path/to/directory"
+
+directory = "/var/lib/filemonitor/FAX"
+pdf_dir = "/var/lib/filemonitor/FAX/pdf"
 os.makedirs(pdf_dir, exist_ok=True)
-json_dir = "path/to/directory"
+json_dir = "/var/lib/filemonitor/FAX/json"
 os.makedirs(json_dir, exist_ok=True)
 fax_key = "Fax"
 accn_key = "Accession"
 
-convert_txt_to_json(directory)
-time.sleep(1)
-read_json_data(directory, pdf_dir, json_dir)
-rename_pdfs_with_json_key(pdf_dir, json_dir, fax_key, accn_key)
+if __name__ == "__main__":
+    log.info("ORU2pdf run started; directory=%s, pdf_dir=%s, json_dir=%s", directory, pdf_dir, json_dir)
+    convert_txt_to_json(directory)
+    time.sleep(1)
+    read_json_data(directory, pdf_dir, json_dir)
+    rename_pdfs_with_json_key(pdf_dir, json_dir, fax_key, accn_key)
+    log.info("ORU2pdf run completed.")

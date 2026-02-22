@@ -9,13 +9,15 @@ Usage:
     python json_oru_to_basic_text_sr.py input_oru.json
 """
 
-import sys
 import json
-from datetime import datetime
-from pathlib import Path
+import logging
+import os
+import re
 import shutil
 import subprocess
-import re
+import sys
+from datetime import datetime
+from pathlib import Path
 
 import pydicom
 from pydicom.dataset import Dataset, FileDataset
@@ -31,6 +33,18 @@ FIND_SCU_PORT = 5000
 # You can keep Basic Text SR; your working file might be Comprehensive SR,
 # but most PACS will still accept this if the content tree looks similar.
 BASIC_TEXT_SR_SOP_CLASS_UID = "1.2.840.10008.5.1.4.1.1.88.11"
+
+# Isolated log file for this script
+PRELIM_LOG_DIR = "/var/lib/filemonitor/PrelimSR/logs"
+PRELIM_LOG_FILE = os.path.join(PRELIM_LOG_DIR, "prelimSR.log")
+os.makedirs(PRELIM_LOG_DIR, exist_ok=True)
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    datefmt="%Y-%m-%d %H:%M:%S",
+    handlers=[logging.FileHandler(PRELIM_LOG_FILE, encoding="utf-8")],
+)
+log = logging.getLogger(__name__)
 
 
 # ------------------------ helpers ------------------------ #
@@ -134,7 +148,7 @@ def query_study_uid(accession, facility):
     Returns the UID string if found, else None.
     """
     if not accession or not facility:
-        print("WARNING: Cannot query PACS: missing accession or facility.")
+        log.warning("Cannot query PACS: missing accession or facility.")
         return None
 
     acc_with_facility = f"{accession}{facility}"
@@ -150,7 +164,11 @@ def query_study_uid(accession, facility):
         str(FIND_SCU_PORT),
     ]
 
-    print("INFO: Running findscu:", " ".join(cmd))
+    # Substring that indicates PACS connection timeout (proceed without SUID)
+    CONNECTION_TIMEOUT_MARKER = "Association Request Failed"
+    TCP_TIMEOUT_MARKER = "Connection timed out"
+
+    log.info("Running findscu: %s", " ".join(cmd))
     try:
         result = subprocess.run(
             cmd,
@@ -160,20 +178,27 @@ def query_study_uid(accession, facility):
             check=False,
         )
     except Exception as e:
-        print(f"WARNING: findscu failed to run: {e}")
+        log.warning("findscu failed to run: %s", e)
+        return None
+
+    output = result.stdout or ""
+
+    # If findscu failed due to connection timeout, proceed without SUID (non-fatal)
+    if CONNECTION_TIMEOUT_MARKER in output and TCP_TIMEOUT_MARKER in output:
+        log.info("PACS connection timed out; proceeding without StudyInstanceUID from findscu.")
         return None
 
     # Look for: I: (0020,000d) UI [1.2.840....] ...
     uid_pattern = re.compile(r"I:\s*\(0020,000d\)\s*UI\s*\[(.*?)\]")
-    for line in result.stdout.splitlines():
+    for line in output.splitlines():
         m = uid_pattern.search(line)
         if m:
             uid = m.group(1).strip()
             if uid:
-                print(f"INFO: Found StudyInstanceUID via findscu: {uid}")
+                log.info("Found StudyInstanceUID via findscu: %s", uid)
                 return uid
 
-    print("WARNING: No StudyInstanceUID found in findscu output.")
+    log.warning("No StudyInstanceUID found in findscu output.")
     return None
 
 
@@ -275,10 +300,10 @@ def create_basic_text_sr_from_json(json_data, output_path):
     custom_suid = json_data.get("SUID")
     if custom_suid:
         ds.StudyInstanceUID = str(custom_suid)
-        print(f"INFO: Using StudyInstanceUID from JSON SUID: {custom_suid}")
+        log.info("Using StudyInstanceUID from JSON SUID: %s", custom_suid)
     else:
         ds.StudyInstanceUID = generate_uid()
-        print(f"INFO: No SUID in JSON; generated StudyInstanceUID: {ds.StudyInstanceUID}")
+        log.info("No SUID in JSON; generated StudyInstanceUID: %s", ds.StudyInstanceUID)
 
     ds.SeriesInstanceUID = generate_uid()
     ds.StudyID = str(json_data.get("Accession", ""))
@@ -367,8 +392,7 @@ def create_basic_text_sr_from_json(json_data, output_path):
     # Attach root as dataset ContentSequence[0]
     ds.ContentSequence = Sequence([root])
 
-    print("DEBUG root item:", ds.ContentSequence[0].RelationshipType,
-          ds.ContentSequence[0].ValueType)
+    log.debug("Root item: %s %s", ds.ContentSequence[0].RelationshipType, ds.ContentSequence[0].ValueType)
 
     # ---------------------------------------------------------
     # Save SR
@@ -380,24 +404,25 @@ def create_basic_text_sr_from_json(json_data, output_path):
 
 def main():
     if len(sys.argv) != 2:
-        print("Usage: json_oru_to_basic_text_sr.py input_oru.json")
+        log.error("Usage: prelimSR.py input_oru.json")
         sys.exit(1)
 
     input_path = Path(sys.argv[1])
     if not input_path.exists():
-        print(f"ERROR: Input file not found: {input_path}")
+        log.error("Input file not found: %s", input_path)
         sys.exit(1)
 
+    log.info("Processing: %s", input_path.name)
     with input_path.open("r", encoding="utf-8") as f:
         json_data = json.load(f)
 
     accession = json_data.get("Accession")
     facility = json_data.get("Facility")
     if not accession:
-        print("ERROR: JSON does not contain 'Accession' key.")
+        log.error("JSON does not contain 'Accession' key.")
         sys.exit(1)
     if not facility:
-        print("ERROR: JSON does not contain 'Facility' key.")
+        log.error("JSON does not contain 'Facility' key.")
         sys.exit(1)
 
     # ------------- NEW: query PACS for StudyInstanceUID and update SUID -------------
@@ -413,11 +438,11 @@ def main():
         try:
             with input_path.open("w", encoding="utf-8") as jf:
                 json.dump(json_data, jf)
-            print(f"INFO: Updated JSON SUID with PACS StudyInstanceUID: {json_data['SUID']}")
+            log.info("Updated JSON SUID with PACS StudyInstanceUID: %s", json_data["SUID"])
         except Exception as e:
-            print(f"WARNING: Failed to write updated SUID back to JSON file: {e}")
+            log.warning("Failed to write updated SUID back to JSON file: %s", e)
     else:
-        print("INFO: Proceeding without SUID from PACS (SR will use generated StudyInstanceUID).")
+        log.info("Proceeding without SUID from PACS (SR will use generated StudyInstanceUID).")
 
     # SR output initially written next to the source JSON
     output_filename = f"{facility}_{accession}.dcm"
@@ -426,10 +451,10 @@ def main():
     create_basic_text_sr_from_json(json_data, str(output_path))
 
     # ---------- move files into DICOM/ and JSON/ under script directory ----------
-    script_dir = Path(__file__).resolve().parent
-    dicom_dir = script_dir / "DICOM"
-    json_dir = script_dir / "JSON"
-
+    prelim_dir = Path("/var/lib/filemonitor/PrelimSR")
+    dicom_dir = prelim_dir / "DICOM"
+    json_dir = prelim_dir / "JSON"
+    prelim_dir.mkdir(exist_ok=True)
     dicom_dir.mkdir(exist_ok=True)
     json_dir.mkdir(exist_ok=True)
 
@@ -437,25 +462,24 @@ def main():
     sr_dest = dicom_dir / output_filename
     try:
         shutil.move(str(output_path), sr_dest)
-        print(f"Moved SR to: {sr_dest}")
+        log.info("Moved SR to: %s", sr_dest)
     except Exception as e:
-        print(f"WARNING: Could not move SR file to {sr_dest}: {e}")
+        log.warning("Could not move SR file to %s: %s", sr_dest, e)
 
     # Move JSON file to ./JSON/<original_json_name>.json
     json_dest = json_dir / input_path.name
     try:
         shutil.move(str(input_path), json_dest)
-        print(f"Moved JSON to: {json_dest}")
+        log.info("Moved JSON to: %s", json_dest)
     except Exception as e:
-        print(f"WARNING: Could not move JSON file to {json_dest}: {e}")
+        log.warning("Could not move JSON file to %s: %s", json_dest, e)
 
-    # Final message (paths relative to script dir if possible)
     try:
-        rel_sr = sr_dest.relative_to(script_dir)
-        rel_json = json_dest.relative_to(script_dir)
-        print(f"Completed. SR: ./{rel_sr}, JSON: ./{rel_json}")
+        rel_sr = sr_dest.relative_to(prelim_dir)
+        rel_json = json_dest.relative_to(prelim_dir)
+        log.info("Completed. SR: ./%s, JSON: ./%s", rel_sr, rel_json)
     except ValueError:
-        print(f"Completed. SR: {sr_dest}, JSON: {json_dest}")
+        log.info("Completed. SR: %s, JSON: %s", sr_dest, json_dest)
 
 
 if __name__ == "__main__":
