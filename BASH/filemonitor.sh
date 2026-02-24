@@ -2,7 +2,7 @@
 
 MONITOR_DIR="/var/lib/filemonitor"
 LOG_FILE="/opt/FileMonitor.log"
-HL7toDICOM_DIR="/var/lib/filemonitor/HL7toDICOM/DICOM"
+HL7toDICOM_DIR="/var/lib/filemonitor/HL7toDICOM/DICOM   "
 HL7toDICOM_SCRIPT="/opt/hl7toDICOM.py"
 FAX_DIR="/var/lib/filemonitor/FAX"
 FAX_SCRIPT="/opt/ORU2pdf.py"
@@ -196,8 +196,9 @@ monitor_prelim_dicom() {
                 mv "$NEW_DICOM_FILE" "$PRELIM_DICOM_DIR/Processed/"
                 log_main "PRELIM DICOM $BASENAME -> Processed/ | AET=$AET sent ok"
             else
+                rm -f "$UNCOMPRESSED_FILE"
                 mkdir -p "$PRELIM_DICOM_DIR/Failed"
-                mv "$UNCOMPRESSED_FILE" "$PRELIM_DICOM_DIR/Failed/"
+                mv "$NEW_DICOM_FILE" "$PRELIM_DICOM_DIR/Failed/"
                 log_main "PRELIM DICOM $BASENAME -> Failed/ | AET=$AET send err"
             fi
         else

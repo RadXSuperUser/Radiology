@@ -26,9 +26,9 @@ from pydicom.uid import ExplicitVRLittleEndian, generate_uid
 
 # ------------------------ DCMTK / PACS settings ------------------------ #
 
-FIND_SCU_AET = "REPORTGEN"
-FIND_SCU_PEER = "172.25.1.22"
-FIND_SCU_PORT = 5000
+FIND_SCU_AET = "ORTHANC"
+FIND_SCU_PEER = "192.168.1.15"
+FIND_SCU_PORT = 4242
 
 # You can keep Basic Text SR; your working file might be Comprehensive SR,
 # but most PACS will still accept this if the content tree looks similar.
