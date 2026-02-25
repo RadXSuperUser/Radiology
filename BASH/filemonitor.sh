@@ -157,11 +157,13 @@ monitor_hl7_dicom() {
                 mv "$NEW_DICOM_FILE" "$HL7toDICOM_DIR/Processed/"
                 log_main "DICOM HL7 $BN -> Processed/ | sent PACS ok"
             else
+                rm -f "$UNCOMPRESSED_FILE"
                 mkdir -p "$HL7toDICOM_DIR/Failed"
-                mv "$UNCOMPRESSED_FILE" "$HL7toDICOM_DIR/Failed/"
+                mv "$NEW_DICOM_FILE" "$HL7toDICOM_DIR/Failed/"
                 log_main "DICOM HL7 $BN -> Failed/ | PACS send err"
             fi
         else
+            rm -f "$UNCOMPRESSED_FILE"
             mkdir -p "$HL7toDICOM_DIR/Failed"
             mv "$NEW_DICOM_FILE" "$HL7toDICOM_DIR/Failed/"
             log_main "DICOM HL7 $BN -> Failed/ | uncompress err"
@@ -187,24 +189,17 @@ monitor_prelim_dicom() {
 
         AET="${BASENAME%%_*}"
         AET="${AET%.dcm}"
-        UNCOMPRESSED_FILE="${NEW_DICOM_FILE%.dcm}_uncompressed.dcm"
 
-        if dcmdjpeg "$NEW_DICOM_FILE" "$UNCOMPRESSED_FILE" >> "$LOG_PRELIMSR" 2>&1; then
-            if storescu -v -aet "$AET" -aec "$PRELIM_AEC" "$DICOM_HOST" "$DICOM_PORT" "$UNCOMPRESSED_FILE" >> "$LOG_PRELIMSR" 2>&1; then
-                rm -f "$UNCOMPRESSED_FILE"
-                mkdir -p "$PRELIM_DICOM_DIR/Processed"
-                mv "$NEW_DICOM_FILE" "$PRELIM_DICOM_DIR/Processed/"
-                log_main "PRELIM DICOM $BASENAME -> Processed/ | AET=$AET sent ok"
-            else
-                rm -f "$UNCOMPRESSED_FILE"
-                mkdir -p "$PRELIM_DICOM_DIR/Failed"
-                mv "$NEW_DICOM_FILE" "$PRELIM_DICOM_DIR/Failed/"
-                log_main "PRELIM DICOM $BASENAME -> Failed/ | AET=$AET send err"
-            fi
+        # PRELIM SR DICOM objects are created uncompressed by prelimSR.py,
+        # so they can be sent directly without running dcmdjpeg.
+        if storescu -v -aet "$AET" -aec "$PRELIM_AEC" "$DICOM_HOST" "$DICOM_PORT" "$NEW_DICOM_FILE" >> "$LOG_PRELIMSR" 2>&1; then
+            mkdir -p "$PRELIM_DICOM_DIR/Processed"
+            mv "$NEW_DICOM_FILE" "$PRELIM_DICOM_DIR/Processed/"
+            log_main "PRELIM DICOM $BASENAME -> Processed/ | AET=$AET sent ok"
         else
             mkdir -p "$PRELIM_DICOM_DIR/Failed"
             mv "$NEW_DICOM_FILE" "$PRELIM_DICOM_DIR/Failed/"
-            log_main "PRELIM DICOM $BASENAME -> Failed/ | uncompress err"
+            log_main "PRELIM DICOM $BASENAME -> Failed/ | AET=$AET send err"
         fi
     done
 }
