@@ -21,6 +21,7 @@ Scripts are intended to be adapted to local site requirements. They are maintain
 | Directory | Description |
 |-----------|-------------|
 | **Python/** | Python scripts for HL7 parsing, PDF/DICOM conversion, modality updates, and structured report generation |
+| **RadRelay/** | Source and installation assets for the RadRelay Python application (packaged workflows, daemon, and web/API components) |
 | **BASH/** | Shell scripts for file monitoring, DICOM SCP, batch file operations, and DICOM tag editing |
 | **PowerShell/** | Windows scripts for HL7 flat-file analysis, modality reporting, field updates, and XML report handling |
 | **Text Files/** | Sample HL7/ORU messages for testing (`sampleORU1.txt`–`sampleORU4.txt`, `sampleHL7FlatFile.txt`) |
@@ -40,6 +41,19 @@ Scripts are intended to be adapted to local site requirements. They are maintain
 | `prelimSR.py` | Builds Basic Text SR–style DICOM from JSON ORU; supports findscu and C-STORE for PACS. |
 | `pmtconverter.py` | PMT (format) conversion utility. |
 | `removeORUbydate.py` | Filters/removes ORU messages by date. |
+
+---
+
+## RadRelay Application
+
+RadRelay is an in-repo Python application that packages several of the standalone scripts into a reusable service and library:
+
+- **Package layout:** `RadRelay/src/radrelay/` contains the core package modules (`config.py`, `db.py`, `daemon.py`, `router.py`, `logging.py`, `dicom.py`, `web.py`) and a `workflows/` subpackage.
+- **Workflows:** `workflows/hl7_pdf_dcm.py`, `workflows/ORU2pdf.py`, and `workflows/prelimSR.py` mirror the original scripts in `Python/` but are now importable as part of the `radrelay.workflows` package for reuse by daemons, web endpoints, or CLI tools.
+- **Install assets:** `RadRelay/install/` includes unit and service definitions (e.g., `radrelay.service`, `radrelay-web.service`) and an NGINX configuration (`nginx-radrelay.conf`) intended for Linux deployments using systemd and NGINX.
+- **Packaging:** `RadRelay/pyproject.toml` is reserved for defining the RadRelay package metadata and dependencies so it can be installed as a standard Python package (e.g., into a virtual environment or site-wide); it can be populated as the application design stabilizes.
+
+During development, RadRelay is intended to evolve from a collection of scripts into a single, daemonized application that routes incoming HL7/ORU/DICOM-related events to the appropriate workflow while exposing configuration and health endpoints via the web component. Existing scripts in `Python/` remain usable directly, but new work should prefer the structured `radrelay` package to simplify deployment and maintenance.
 
 ---
 
