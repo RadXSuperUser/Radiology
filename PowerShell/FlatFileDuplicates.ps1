@@ -1,9 +1,9 @@
 # ====== Config ======
 # Input flat file (pipe-delimited)
-$inputFile  = "C:\Users\GGuaracha\OneDrive - Casper Medical Imaging\Documents\ScreenConnect\Files\CodyHistorical.OB_BillingFile_File_ADT_ORU.txt"
+$inputFile  = "C:\Users\radxsu\Documents\ScreenConnect\Files\Site 1 OB_BillingFile_File_ADT_ORU.txt"
 
 # Output file for duplicates
-$outputFile = "C:\Users\GGuaracha\OneDrive - Casper Medical Imaging\Documents\ScreenConnect\Files\flatfileDuplicates.txt"
+$outputFile = "C:\Users\radxsu\Documents\ScreenConnect\Files\Site 1 flatfileDuplicates.txt"
 
 # ====== Sanity checks ======
 if (-not (Test-Path $inputFile)) {

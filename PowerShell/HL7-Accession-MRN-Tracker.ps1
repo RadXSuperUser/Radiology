@@ -1,6 +1,6 @@
 # Input/Output Folders 
-$inputFolder = "C:\Users\GGuaracha\OneDrive - Casper Medical Imaging\Documents\Change PACS\Cody\CRH 2022 Priors\Intelerad Updates"
-$outputFile = "C:\Users\GGuaracha\OneDrive - Casper Medical Imaging\Documents\Change PACS\Cody\duplicatesACCMRN2022.txt"
+$inputFolder = "C:\Users\radxsu\Documents\PACS\Site 1\S1 OB_BillingFile_File_ADT_ORU.txt"
+$outputFile = "C:\Users\radxsu\Documents\PACS\Site 1\S1 duplicatesACCMRN2022.txt"
 
 # Field counts storage
 $fieldCounts = @{

@@ -1,5 +1,5 @@
 # Input/Output Files
-$inputFile = "C:\Users\GGuaracha\OneDrive - Casper Medical Imaging\Documents\Change PACS\Cody\CRH 2022 Priors\Intelerad Updates\CRH Priors 2022 1.OB_Change PACS_ADT_ORM_ORU.txt"
+$inputFile = "C:\Users\radxsu\PACS\Site_1\S1 2022 Priors\Updates\S1 Priors 2022 1.OB_PACS_ADT_ORM_ORU.txt"
 
 # Field counts storage
 $fieldCounts = @{

@@ -1,6 +1,6 @@
 # Define the input and output folders
-$inputFolder = "C:\Users\GGuaracha\OneDrive - Casper Medical Imaging\Documents\Change PACS\Cody\CRH 2024 ORU"
-$outputFolder = "C:\Users\GGuaracha\OneDrive - Casper Medical Imaging\Documents\Change PACS\Cody\CRH 2024 ORU\Intelerad Updates - CRH 2024"
+$inputFolder = "C:\Users\radxsu\PACS\Site 1\S1 2024 ORU"
+$outputFolder = "C:\Users\radxsu\PACS\Site 1\S1 2024 ORU\Updates - S1 2024"
 
 # Ensure output folder exists
 if (-not (Test-Path $outputFolder)) {
@@ -67,9 +67,9 @@ function Update-Segment {
 
     switch ($segmentType) {
         "MSH" {
-            # MSH-3/4/5/6 = Corepoint|CRH|Intelerad|CMI
+            # MSH-3/4/5/6 = Corepoint|S1|Intelerad|CMI
             $fields = Set-Hl7FieldValue -fields $fields -index 2 -value "Corepoint"
-            $fields = Set-Hl7FieldValue -fields $fields -index 3 -value "CRH"
+            $fields = Set-Hl7FieldValue -fields $fields -index 3 -value "S1"
             $fields = Set-Hl7FieldValue -fields $fields -index 4 -value "Intelerad"
             $fields = Set-Hl7FieldValue -fields $fields -index 5 -value "CMI"
         }
@@ -95,8 +95,8 @@ function Update-Segment {
         "ORC" {
             # ORC-5 = ZZ (using same index as counter script)
             $fields = Set-Hl7FieldValue -fields $fields -index 5 -value "ZZ"
-            # ORC-17 = CRH (using same index as counter script)
-            $fields = Set-Hl7FieldValue -fields $fields -index 17 -value "CRH"
+            # ORC-17 = S1 (using same index as counter script)
+            $fields = Set-Hl7FieldValue -fields $fields -index 17 -value "S1"
         }
         "OBR" {
             # OBR-8 = Copy OBR-14 data
