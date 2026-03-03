@@ -1,0 +1,30 @@
+paths:
+  data_dir: /var/lib/radrelay
+  inbound: /var/lib/radrelay/inbound
+  fax_dir: /var/lib/radrelay/FAX
+  prelim_dir: /var/lib/radrelay/PrelimSR
+  hl7_dir: /var/lib/radrelay/HL7toDICOM
+  logs_dir: /var/log/radrelay
+  state_db: /var/lib/radrelay/state/radrelay.sqlite
+
+watch:
+  events: [moved_to, close_write]   # safe defaults
+  ignore_patterns: ["*.swp", "*.tmp", "*.swx", "*~"]
+
+routing:
+  - match: "^FAX_.*\\.json$"
+    action: "oru2pdf"
+  - match: "^PRELIM_.*"
+    action: "prelim_sr"
+  - match: ".*"                     # default (HL7 base64)
+    action: "hl7_pdf_dcm"
+
+dicom:
+  host: "192.168.1.25"
+  port: 104
+  default:
+    aet: "ORTHANC"
+    aec: "SBDEMO"
+  prelim:
+    aec: "NIGHTHAWK_SR"
+    aet_from_filename_prefix: true

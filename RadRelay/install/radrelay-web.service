@@ -1,0 +1,21 @@
+[Unit]
+Description=RadRelay Web UI
+After=network.target
+
+[Service]
+Type=simple
+User=svcrun
+Group=svcrun
+WorkingDirectory=/opt/radrelay
+Environment=RADRELAY_CONFIG=/etc/radrelay/config.yaml
+ExecStart=/opt/radrelay/venv/bin/uvicorn radrelay.web:app --host 127.0.0.1 --port 8080
+Restart=always
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/radrelay /var/log/radrelay /etc/radrelay
+
+[Install]
+WantedBy=multi-user.target

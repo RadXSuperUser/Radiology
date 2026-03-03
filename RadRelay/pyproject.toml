@@ -1,0 +1,20 @@
+[project]
+name = "radrelay"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+  "fastapi",
+  "uvicorn",
+  "watchdog",
+  "pyyaml",
+]
+
+[project.scripts]
+radrelay = "radrelay.daemon:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
